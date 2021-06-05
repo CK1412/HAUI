@@ -17,7 +17,7 @@ void xuat(int *a, int n) {
 void bubble_sort(int *a, int n) {
 	for(int i = 0; i < n-1; i++)
 		for(int j = n-1; j > i; j--)
-			if(a[j] < a[j-1]) {
+			if(a[j] < a[j-1]) {		// sắp xêp giảm sửa thành a[j] > a[j-1]
 				doicho(a[j], a[j-1]);
 			}
 }
@@ -26,7 +26,7 @@ void select_sort(int *a, int n) {
 	for(int i = 0; i < n-1; i++) {
 		int m = i;
 		for(int j = i+1; j < n; j++)
-			if(a[j] < a[m]) 
+			if(a[j] < a[m]) 		// sắp xêp giảm sửa thành a[j] > a[m]
 				m = j;
 		if(m != i) 
 			doicho(a[m], a[i]);
@@ -37,7 +37,7 @@ void insert_sort(int *a, int n) {
 	for(int i = 1; i < n; i++) {
 		int t = a[i];
 		int j = i-1;
-		while(j >= 0 && t < a[j]) {
+		while(j >= 0 && t < a[j]) {		// sắp xêp giảm sửa thành t > a[j]
 			a[j+1] = a[j];
 			j--;
 		}
@@ -52,8 +52,8 @@ void quick_sort(int *a, int left, int right) {
 			m = left + (right - left)/2,
 			k = a[m];
 		while(i <= j) {
-			while(a[i] < k) i++;
-			while(a[j] > k) j--;
+			while(a[i] < k) i++;		// sắp xêp giảm sửa thành a[i] > k
+			while(a[j] > k) j--;		// 		      và a[j] < k
 			if(i <= j) {
 				doicho(a[j], a[i]);
 				i++;
@@ -67,9 +67,9 @@ void quick_sort(int *a, int left, int right) {
 //
 void swap(int *a, int k, int n) {
 	int i = 2*k + 1;
-	if(a[i] < a[i+1] && i+1 < n)
+	if(a[i] < a[i+1] && i+1 < n)		// sắp xêp giảm sửa thành a[i] > a[i+1]
 		i++;
-	if(a[k] < a[i] && i < n) {
+	if(a[k] < a[i] && i < n) {		// sắp xêp giảm sửa thành a[k] > a[i]
 		doicho(a[k], a[i]);
 		swap(a, i, n);
 	} 
@@ -99,7 +99,7 @@ void merge(int *a, int left, int mid, int right) {
 		
 	int i = 0, j = 0, k = left;
 	while(i < n1 && j < n2) 
-		a[k++] = (a1[i] < a2[j]) ? a1[i++] : a2[j++];
+		a[k++] = (a1[i] < a2[j]) ? a1[i++] : a2[j++];		// sắp xêp giảm sửa thành a1[i] > a2[j]
 	while(i < n1) 
 		a[k++] = a1[i++];
 	while(j < n2) 
