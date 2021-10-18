@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\bin\Debug\TinhToan.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\bin\Debug\TinhToan.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\bin\Debug\TinhToan.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\obj\Debug\TinhToan.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\obj\Debug\TinhToan.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\obj\Debug\TinhToan.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TinhToan\obj\Debug\TinhToan.csproj.AssemblyReference.cache

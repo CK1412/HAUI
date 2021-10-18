@@ -1,0 +1,6 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TamGiac\obj\Debug\TamGiac.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TamGiac\bin\Debug\TamGiac.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TamGiac\bin\Debug\TamGiac.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TamGiac\bin\Debug\TamGiac.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TamGiac\obj\Debug\TamGiac.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\TamGiac\obj\Debug\TamGiac.pdb
