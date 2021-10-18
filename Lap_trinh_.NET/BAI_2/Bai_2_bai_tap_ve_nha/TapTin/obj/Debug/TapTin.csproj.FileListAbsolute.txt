@@ -1,0 +1,6 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2_bai_tap_ve_nha\TapTin\bin\Debug\TapTin.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2_bai_tap_ve_nha\TapTin\bin\Debug\TapTin.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2_bai_tap_ve_nha\TapTin\bin\Debug\TapTin.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2_bai_tap_ve_nha\TapTin\obj\Debug\TapTin.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2_bai_tap_ve_nha\TapTin\obj\Debug\TapTin.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2_bai_tap_ve_nha\TapTin\obj\Debug\TapTin.pdb
