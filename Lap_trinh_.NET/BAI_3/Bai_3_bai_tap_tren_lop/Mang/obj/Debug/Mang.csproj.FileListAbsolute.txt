@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\bin\Debug\Mang.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\bin\Debug\Mang.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\bin\Debug\Mang.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\obj\Debug\Mang.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\obj\Debug\Mang.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\obj\Debug\Mang.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\Mang\obj\Debug\Mang.pdb
