@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\bin\Debug\bai2.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\bin\Debug\bai2.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\bin\Debug\bai2.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\obj\Debug\bai2.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\obj\Debug\bai2.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\obj\Debug\bai2.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\_10_2021\Bai5_Phieu_bai_tap_2\bai2\obj\Debug\bai2.pdb
