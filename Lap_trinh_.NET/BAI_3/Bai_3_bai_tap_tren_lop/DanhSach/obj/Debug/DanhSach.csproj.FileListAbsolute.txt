@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\bin\Debug\DanhSach.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\bin\Debug\DanhSach.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\bin\Debug\DanhSach.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\obj\Debug\DanhSach.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\obj\Debug\DanhSach.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\obj\Debug\DanhSach.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\DanhSach\obj\Debug\DanhSach.pdb

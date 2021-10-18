@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\bin\Debug\HelloWorld.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\bin\Debug\HelloWorld.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\bin\Debug\HelloWorld.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\obj\Debug\HelloWorld.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai_3_bai_tap_tren_lop\HelloWorld\obj\Debug\HelloWorld.pdb
