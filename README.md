@@ -1,2 +1,2 @@
 # HAUI
-Tài liêu học ở trường tôi đã học và sưu tầm được
+Tài liệu học ở trường mà tôi đã học, đã làm và sưu tầm được
