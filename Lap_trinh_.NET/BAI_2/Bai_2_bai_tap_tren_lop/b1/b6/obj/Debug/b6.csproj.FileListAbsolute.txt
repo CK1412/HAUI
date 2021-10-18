@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\bin\Debug\b6.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\bin\Debug\b6.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\bin\Debug\b6.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\obj\Debug\b6.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\obj\Debug\b6.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\obj\Debug\b6.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\20_09_2021\Bai_2\b1\b6\obj\Debug\b6.pdb
