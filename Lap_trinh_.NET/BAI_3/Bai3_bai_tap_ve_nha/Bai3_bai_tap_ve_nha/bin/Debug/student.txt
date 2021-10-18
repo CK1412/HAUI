@@ -1,0 +1,4 @@
+ID      HO TEN              GIOI TINH   TUOI      DIEM TOAN   DIEM LY     DIEM HOA    DIEM TB     HOC LUC     
+0       1                   1           1         1           1           1           1           Yeu         
+2       2                   2           2         2           2           2           2           Yeu         
+1       3                   3           3         3           3           3           3           Yeu         

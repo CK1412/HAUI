@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\bin\Debug\Bai3_bai_tap_ve_nha.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\bin\Debug\Bai3_bai_tap_ve_nha.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\bin\Debug\Bai3_bai_tap_ve_nha.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\obj\Debug\Bai3_bai_tap_ve_nha.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\obj\Debug\Bai3_bai_tap_ve_nha.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\obj\Debug\Bai3_bai_tap_ve_nha.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\BT\27_09_2021\Bai3_bai_tap_ve_nha\Bai3_bai_tap_ve_nha\obj\Debug\Bai3_bai_tap_ve_nha.pdb
