@@ -8,7 +8,7 @@
 |  04  | [BÀI 4](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_4) | [OOP: class, object, inheritance, interface](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_4/Bai%204.De%20cuong%20bg-LT%20huong%20doi%20tuong.pdf) | 
 |  05  | [BÀI 5](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_5) | Bài tập về class | 
 |  06  | [BÀI 6](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_6) | Bài tập về class, interface, inheritance | 
-|  07  | [BÀI 7](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7) | [Tổng quan Microsoft .NET và ngôn ngữ C#](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7/Bai7-de-cuong-bai-hoc.pdf) | 
+|  07  | [BÀI 7](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7) | [Delegate, anonymous method, lambda expression, anonymous type](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7/Bai7-de-cuong-bai-hoc.pdf) | 
 
 # Đề kiểm tra, đề thi minh họa (C#,Winform)
 
