@@ -1,0 +1,7 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\bin\Debug\De_02.exe.config
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\bin\Debug\De_02.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\bin\Debug\De_02.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\obj\Debug\De_02.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\obj\Debug\De_02.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\obj\Debug\De_02.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\Bai_kiem_tra_so_1\De_02\obj\Debug\De_02.pdb
