@@ -15,3 +15,4 @@
 |  STT |   Đề bài   |          Lời giải           |   Nội dung    |
 |:----:|------------|----------------------------|:-------------:|
 |  01  | [Bài kiểm tra số 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/Bai-kiem-tra-1.pdf) | [Bài kiểm tra số 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/Bai_kiem_tra_so_1/) | về OOP |
+|  02  | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/Đề-kiểm-tra-TX1.pdf) | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/De_kiem_tra_TX_1/) | về OOP |
