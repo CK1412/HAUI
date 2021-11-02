@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+}
+
+header,
+footer {
+    height: 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.menu,
+.submenu {
+    list-style-type: none;
+    background-color: rgb(29, 162, 97);
+}
+.menu_item {
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+.menu_item:not(:first-child) {
+    margin-left: -5px;
+}
+.menu_item a {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu_item:hover,
+.submenu > li:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.menu_item:hover > a,
+.submenu > li:hover > a {
+    color: yellow;
+}
+.menu_item:hover .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.submenu > li {
+    padding: 10px 15px;
+    min-width: 200px;
+}
+
+.form-box {
+    padding: 10px;
+    width: 80%;
+    margin: 15px auto;
+    background-color: blue ;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+
+.form-box > h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.form-box > div {
+    margin: 12px 0;
+    text-align: left;
+}
+.form-box > div > span {
+    display: inline-block;
+    min-width: 300px;
+    text-align: right;
+    margin-right: 100px;
+}
+.form-box > div > input {
+    width: 500px;
+    padding: 3px 5px;
+}
+input[type="button"] {
+    padding: 5px 10px;
+    color: black;
+    font-weight: 700;
+    margin: 5px 0;
+    cursor: pointer;
+}

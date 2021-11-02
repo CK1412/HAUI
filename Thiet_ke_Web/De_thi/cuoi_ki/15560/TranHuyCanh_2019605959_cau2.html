@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            text-align: center;
+        }
+        form {
+            border: 1px solid gray;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" onsubmit="return false">
+        <table>
+            <tr>
+                <th>Nhập chuỗi: </th>
+                <td><input type="text" id="input"></td>
+            </tr>
+            <tr>
+                <th>Số từ có 4 kí tự: </th>
+                <td><input type="text" id="output"></td>
+            </tr>
+            <tr>
+                <td class="btn" colspan="2">
+                    <button type="button" id="submit">Tìm</button>
+                    <button type="reset" id="cancel">Hủy bỏ</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        const $ = document.getElementById.bind(document)
+        const submitBtn = $('submit')
+        const input = $('input')
+        const output = $('output')
+
+        submitBtn.onclick = function () {
+            var stringInput = input.value.trim().split(/\s+/)
+            var count = 0
+            if (input.value.length > 255)
+                alert("Chuỗi không quá 255 kí tự.")
+            for (var i = 0; i < stringInput.length; i++)
+                if (stringInput[i].length == 4) {
+                    count++
+                }
+            output.value = count
+        }
+    </script>
+</body>
+
+</html>

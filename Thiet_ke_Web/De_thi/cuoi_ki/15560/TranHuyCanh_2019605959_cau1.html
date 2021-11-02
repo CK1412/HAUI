@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .black {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header {
+            display: flex;
+            height: 60px;
+            justify-content: space-evenly;
+            background-color: #336699;
+        }
+
+        .user-box {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            margin: 5px 0;
+        }
+
+        .search-box>p {
+            border-right: 1px solid lightgray;
+            line-height: 40px;
+            padding: 4px 6px;
+            background-color: white;
+        }
+
+        .search-box>input[type="text"] {
+            padding: 16px;
+            border: 0;
+            width: 300px;
+            outline: none;
+        }
+
+        .search-box>input[type="button"] {
+            height: 100%;
+            border: 0;
+            padding: 0 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .body {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .sidebar {
+            border: 1px solid #336699;
+            width: 15%;
+        }
+
+        .sidebar>h3 {
+            background-color: #336699;
+            color: white;
+            text-align: left;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            text-align: left;
+            padding-left: 0px;
+        }
+
+        .menu-item {
+            padding: 10px;
+            position: relative;
+        }
+
+        .menu-item:not(:last-child) {
+            border-bottom: 1px solid lightslategray;
+        }
+
+        .menu-item:hover .link-menu {
+            color: #336699;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            position: absolute;
+            display: none;
+            left: 100%;
+            top: 0;
+            border: 1px solid #336699;
+            list-style-type: none;
+            padding-left: 10px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .submenu-item {
+            padding: 10px;
+        }
+
+        .submenu-item>a {
+            color: black;
+        }
+
+        .products-list {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+            width: 85%;
+        }
+
+        .product {
+            width: 23%;
+        }
+
+        .product>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+
+        }
+        .title:hover {
+            color: red;
+        }
+        .price>p {
+            color: red;
+        }
+
+        .sale {
+            margin-left: 10px;
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="search-box">
+                <p>All Categories</p>
+                <input type="text" placeholder="search for product">
+                <input type="button" value="Search">
+            </div>
+            <div class="cart-box">
+                <img src="./images/shopping-cart.png" alt="">
+            </div>
+            <div class="user-box">
+                <img src="./images/user.png" alt="">
+            </div>
+        </header>
+        <div class="body">
+            <div class="sidebar">
+                <h3>ALL CATEGORY</h3>
+                <ul class="menu">
+                    <li class="menu-item"><a class="link-menu" href="">Home</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">Blog</a></li>
+                    <li class="menu-item">
+                        <a class="link-menu" href="">Laptop</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="" class="black">Dell(0)</a></li>
+                            <li class="submenu-item"><a href="" class="black">Men(0)</a></li>
+                            <li class="submenu-item"><a href="" class="black">Purse(0)</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="link-menu" href="">shocks</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">cloth</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">cosmetic</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">desktop</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">kids</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">mp3 player</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">perfume</a></li>
+                    <li class="menu-item"><a class="link-menu" href="">+ MORE</a></li>
+                </ul>
+            </div>
+
+            <div class="products-list">
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+                <div class="product">
+                    <img src="./images/1.jpeg" alt="">
+                    <h4 class="title">Vòng đeo tay galaxy hàng chính hãng</h2>
+                        <div class="price">
+                            <p>590.000đ</p>
+                            <div class="sale">-40%</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

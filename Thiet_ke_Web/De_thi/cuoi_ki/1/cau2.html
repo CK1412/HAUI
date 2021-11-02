@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        #message {
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return false">
+        <table>
+            <tr>
+                <th>Tên sách:</th>
+                <td><input type="text" id="book-title" required></td>
+            </tr>
+            <tr>
+                <th>Tác giả:</th>
+                <td><input type="text" id="author" required></td>
+            </tr>
+            <tr>
+                <th>Địa chỉ website:</th>
+                <td><input type="url" id="address-url" required></td>
+            </tr>
+            <tr>
+                <th>Mô tả:</th>
+                <td>
+                    <textarea id="description" rows="5" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" id="send">Gửi đi</button>
+                    <button type="reset" id="cancel">Hủy bỏ</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="message">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        const $ = document.getElementById.bind(document)
+
+        const bookTitle = $('book-title')
+        const author = $('author')
+        const description = $('description')
+        const addressUrl = $('address-url')
+        const sendBtn = $('send')
+        const cancelBtn = $('cancel')
+        const message = $('message')
+
+        sendBtn.onclick = function () {
+            if (bookTitle.value != '' && author.value != '' && description.value != '' && addressUrl.value != '') {
+                message.innerHTML = 'Gửi thành công'
+            }
+        }
+
+        // cancelBtn.onclick = function () {
+        //     bookTitle.value = ''
+        //     author.value = ''
+        //     description.value = ''
+        //     addressUrl.value = ''
+        // }
+
+
+    </script>
+</body>
+
+</html>

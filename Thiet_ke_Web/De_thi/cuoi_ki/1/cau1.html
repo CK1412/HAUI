@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            height: 60px;
+            justify-content: space-evenly;
+        }
+
+        .category-box,
+        .user-box {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .category-box:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            list-style-type: none;
+            top: 102%;
+            left: 0;
+            background-color: white;
+            width: 200px;
+            padding: 5px;
+            box-shadow: 1px 1px 4px;
+        }
+
+        .submenu-item {
+            padding: 6px 2px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            margin: 5px 0;
+
+        }
+
+        .search-box>p {
+            border-right: 1px solid lightgray;
+            line-height: 40px;
+            padding: 0 5px;
+        }
+
+        .search-box>input[type="text"] {
+            padding: 6px;
+            border: 0;
+            width: 300px;
+            outline: none;
+        }
+
+        .search-box>input[type="button"] {
+            height: 100%;
+            border: 0;
+            padding: 0 10px;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+        }
+
+        .line {
+            margin: 10px 0;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .home-page {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            width: 15%;
+        }
+
+        .menu {
+            list-style-type: none;
+        }
+
+        .menu-item {
+            padding: 10px 5px;
+            width: 200px;
+
+        }
+
+        .sidebar>h4 {
+            margin: 50px 0 10px;
+        }
+
+        .search-bottom {
+            border: 1px solid black;
+            width: 150px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .search-bottom>input[type="text"] {
+            width: 120px;
+            border: 0;
+            outline: none;
+            padding: 2px;
+        }
+
+        .search-bottom>img {
+            cursor: pointer;
+        }
+
+        section {
+            width: 85%;
+        }
+
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+
+        }
+
+        .product-header>div {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-header>div>h2 {
+            text-transform: uppercase;
+        }
+
+        .amount-product {
+            margin-left: 20px;
+        }
+
+        select {
+            width: 200px;
+            padding: 10px;
+        }
+
+        .products-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product {
+            width: 23%;
+        }
+
+        .product>img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .product>img:hover {
+            transform: scale(1.2);
+        }
+
+        .price {
+            display: flex;
+            padding: 5px;
+        }
+
+        .price>h3 {
+            padding: 8px;
+        }
+
+        .price>p {
+            padding: 8px;
+            text-decoration: line-through;
+        }
+
+        .sale {
+            padding: 8px;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-img">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="category-box">
+                <img src="./images/menu-icon.png" alt="">
+                Tất cả danh mục
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="">voucher giảm đến 50%</a></li>
+                    <li class="submenu-item"><a href="">Đi-ăn chơi</a></li>
+                    <li class="submenu-item"><a href="">Sức khỏe-vinmec</a></li>
+                    <li class="submenu-item"><a href="">mobile-tablet</a></li>
+                    <li class="submenu-item"><a href="">Điện tử, công nghệ</a></li>
+                    <li class="submenu-item"><a href="">Điện gia dụng</a></li>
+                    <li class="submenu-item"><a href="">Thực phẩm tươi sống</a></li>
+                    <li class="submenu-item"><a href="">hàng tiêu dùng</a></li>
+                    <li class="submenu-item"><a href="">Thời trang</a></li>
+                    <li class="submenu-item"><a href="">Mỹ phẩm</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <p>Sức khỏe & sắc đẹp</p>
+                <input type="text" placeholder="Tìm sản phẩm, thương hiệu bạn mong muốn">
+                <input type="button" value="Tìm kiếm">
+            </div>
+            <div class="user-box">
+                <img src="./images/avatar-icon.png" alt="">
+                <div class="user">
+                    <p>Đăng nhập & Đăng kí</p>
+                    <p>Tài khoản</p>
+                </div>
+            </div>
+            <div class="cart-box">
+                <img src="./images/cart-icon.png" alt="">
+            </div>
+        </header>
+        <div class="line">
+            <hr>
+        </div>
+        <div class="body">
+            <div class="home-page">
+                Trang chủ > Sức khỏe sắc đẹp
+            </div>
+            <article>
+                <div class="sidebar">
+                    <h2>Sức khỏe & sắc đẹp</h2>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Tinh dầu & spa</a></li>
+                        <li class="menu-item"><a href="">Nước hoa</a></li>
+                        <li class="menu-item"><a href="">Mỹ phẩm dành cho nam</a></li>
+                        <li class="menu-item"><a href="">Chăm sóc mặt</a></li>
+                        <li class="menu-item"><a href="">Chăm sóc tóc</a></li>
+                        <li class="menu-item"><a href="">Chăm sóc cá nhân và sức khỏe</a></li>
+                        <li class="menu-item"><a href="">Dụng cụ thể thao</a></li>
+                        <li class="menu-item"><a href="">Vitamin & thực phẩm chức năng</a></li>
+                        <li class="menu-item"><a href="">Chăm sóc toàn thân</a></li>
+                        <li class="menu-item"><a href="">Trang điểm</a></li>
+                    </ul>
+                    <h4>Thương hiệu</h4>
+                    <div class="search-bottom">
+                        <input type="text">
+                        <img src="./images/search-icon.png" alt="">
+                    </div>
+                </div>
+                <section>
+                    <div class="product-header">
+                        <div>
+                            <h2>Sức khỏe & sắc đẹp</h2>
+                            <p class="amount-product">Tìm thấy 105 sản phẩm</p>
+                        </div>
+                        <form action="">
+                            <select name="" id="">
+                                <option value="Sắp xếp theo">Sắp xếp theo</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="Trang 1 trong 2">Trang 1 trong 2</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="products-list">
+                        <div class="product">
+                            <img src="./images/1.png" alt="">
+                            <h2 class="title">Son môi các kiểu con đà điểu</h2>
+                            <div class="price">
+                                <h3>522.500đ</h3>
+                                <p>600.000đ</p>
+                                <div class="sale">5%</div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./images/2.png" alt="">
+                            <h2 class="title">Son môi các kiểu con đà điểu</h2>
+                            <div class="price">
+                                <h3>522.500đ</h3>
+                                <p>600.000đ</p>
+                                <div class="sale">5%</div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./images/3.png" alt="">
+                            <h2 class="title">Son môi các kiểu con đà điểu</h2>
+                            <div class="price">
+                                <h3>522.500đ</h3>
+                                <p>600.000đ</p>
+                                <div class="sale">5%</div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="./images/4.png" alt="">
+                            <h2 class="title">Son môi các kiểu con đà điểu</h2>
+                            <div class="price">
+                                <h3>522.500đ</h3>
+                                <p>600.000đ</p>
+                                <div class="sale">5%</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+
+    <script>
+        const category = document.querySelector('.category-box');
+        const submenu = document.querySelector('.submenu');
+
+        var isDisplay = false;
+        category.onclick = function () {
+            isDisplay = !isDisplay
+            if (isDisplay) {
+                submenu.style.display = 'block';
+            }
+            else {
+                submenu.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
