@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color:  #fbf5f9;
+}
+header .logo {
+    width: 200px;
+    cursor: pointer;
+}
+.header-right {
+    text-align: right;
+    padding: 10px;
+}
+.search-box {
+    margin-bottom: 5px;
+}
+.search-box input,
+.search-box button {
+    padding: 3px;
+}
+.search-box button {
+    cursor: pointer;
+}
+.menu-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-box > img {
+    width: 100px;
+    cursor: pointer;
+}
+.menu_item  {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: -5px;
+    border: 1px solid transparent;
+}
+.menu_item:hover {
+    border: 1px solid  #ce0645;
+    cursor: pointer;
+}
+.menu_item:hover a {
+    color:  #ce0645;
+}
+.menu_item > a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.banner {
+    height: 300px;
+}
+.banner img {
+    height: 300px;
+}
+article {
+    width: 80%;
+    margin: 0 auto;
+}
+.category-title {
+    color:  #ce0645;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.category-title img {
+    width: 300px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 73%;
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+}
+.list-item {
+    background-color: #f3f3f3;
+    width: 18%;
+    border: 1px solid lightgray;
+}
+.list-item h5 {
+    padding: 4px 10px;
+    text-transform: uppercase;
+    color: #d00847;
+    font-size: 14px;
+}
+.list-item p {
+    padding: 0 10px 4px;
+    font-size: 14px;
+}
+
+footer {
+    height: 50px;
+    color: white;
+    background-color: #cf0746;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    margin-left: 135px;
+    font-size: 14px;
+}
+.image-social {
+    height: 35px;
+    margin-right:114px;
+    cursor: pointer;
+}
+.image-social img {
+    height: 100%;
+}

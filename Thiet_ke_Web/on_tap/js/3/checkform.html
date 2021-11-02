@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin-bottom: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table>
+            <td>Họ Tên: </td>
+            <td>
+                <input type="text" name="fname" id="fname">
+                <span id="name" class="error"></span>
+            </td>
+
+            <tr>
+                <td>Số điện thoại:</td>
+                <td>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="012-345-6789">
+                    <span id="phone" class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Địa chỉ:</td>
+                <td>
+                    <input type="text" name="address" id="address">
+                    <span id="addr" class="error"></span>
+                </td>
+            </tr>
+
+            <td>Password: </td>
+            <td>
+                <input type="text" name="password" id="password" placeholder="aA1@...">
+                <span id="pass" class="error"></span>
+            </td>
+        </table>
+
+        <button style="margin-left: 70px;" onclick="check(); return false;">Show</button>
+    </form>
+
+    <script>
+        function check() {
+            var name  = document.getElementById("fname").value;
+            var phone = document.getElementById("phonenumber").value;
+            var addr  = document.getElementById("address").value;
+            var pass  = document.getElementById("password").value;
+            var checkname = /[a-zA-Z\s]{2,}/i;
+            var checkphone = /^\d{3}[-\s]?\d{3}[-\s]?\d{4}$/;
+            var checkpass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W])[a-zA-Z0-9@#$%^&*]{8,}$/;
+            // check name...
+            if(name ==="") {
+                document.getElementById("name").innerHTML = "* Tên không được để trống.";
+            } else if(!checkname.test(name)){
+                document.getElementById("name").innerHTML = "* Tên không hợp lệ.";
+            } else {
+                document.getElementById("name").innerHTML = "";
+            }
+            // check password...
+            if(pass === "") {
+                document.getElementById("pass").innerHTML = "* Mật khẩu không được để trống.";
+            }else if(!checkpass.test(pass)) {
+                document.getElementById("pass").innerHTML = "* Mật khẩu không hợp lệ.";
+            } else {
+                document.getElementById("pass").innerHTML = "";
+            }
+            // check phonenumber...
+            if(phone === "") {
+                document.getElementById("phone").innerHTML = "* Số điện thoại không được để trống."; 
+            } else if(!checkphone.test(phone)) {
+                document.getElementById("phone").innerHTML = "* Số điện thoại không hợp lệ."; 
+            } else {
+                document.getElementById("phone").innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

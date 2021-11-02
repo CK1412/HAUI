@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        header,
+        footer {
+            height: 50px;
+            line-height: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .sidebar {
+            background-color: rgb(172, 35, 49);
+        }
+        .menu,
+        .submenu {
+            list-style-type: none;
+            display: inline-block;
+            min-width: 300px;
+        }
+
+        .menu li {
+            background-color: rgb(172, 35, 49);
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        .menu>li {
+            position: relative;
+            display: inline-block;
+        }
+        .menu>li:not(:first-child) {
+            margin-left: -5px;
+        }
+        .menu li:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .menu a {
+            color: white;
+        }
+
+        .menu li:hover a {
+            color: yellow;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        form {
+            background-color: blue;
+            width: 60%;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+
+        .text_box {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .lable {
+            display: inline-block;
+            color: white;
+            width: 250px;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            font-size: inherit;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            font-size: 18px;
+            background-color: lightgray;
+            cursor: pointer;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            bài kiểm tra số 2
+        </header>
+        <div class="body">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="">Lập trình Java</a></li>
+                    <li>
+                        <a href="">Thiết kế Web</a>
+                        <ul class="submenu">
+                            <li><a href="">Tài liệu HTML</a></li>
+                            <li><a href="">Tài liệu CSS</a></li>
+                            <li><a href="">Tài liệu Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Lập trình C#</a></li>
+                    <li><a href="">Lập trình web</a></li>
+                    <li><a href="">Lập trình hướng đối tượng</a></li>
+                    <li><a href="">Cơ sở dữ liệu</a></li>
+                </ul>
+            </div>
+            <section>
+                <form action="" onsubmit="return false">
+                    <div class="text_box">
+                        <span class="lable">Họ và tên</span>
+                        <input type="text" placeholder="Họ tên" id="fullname" required>
+                    </div>
+                    <div class="text_box">
+                        <span class="lable">Địa chỉ</span>
+                        <input type="text" placeholder="Địa chỉ" id="address" required>
+                    </div>
+                    <div class="text_box">
+                        <span class="lable">Giới tính</span>
+                        Nam <input type="radio" name="gender" id="male">
+                        Nữ <input type="radio" name="gender" id="female">
+                        Khác <input type="radio" name="gender" id="other-gender">
+                    </div>
+                    <div class="text_box">
+                        <span class="lable">Sở thích</span>
+                        Sữa <input type="checkbox" name="food1" id="food1">
+                        Chè bưởi <input type="checkbox" name="food2" id="food2">
+                        Phở <input type="checkbox" name="food3" id="food3">
+                    </div>
+                    <input type="submit" value="Kiểm tra" id="submit">
+                </form>
+            </section>
+        </div>
+        <footer>
+            bản quyền thuộc về test 2
+        </footer>
+    </div>
+
+    <script>
+        var address = document.getElementById('address')
+        var submitData = document.getElementById('submit')
+
+        submitData.onclick = function (e) {
+            var addressValue = address.value.trim().toLowerCase().split(/\s+/)
+
+            var str = addressValue.map((e) => e.replace(e.charAt(0), e.charAt(0).toUpperCase()))
+
+            address.value = str.join(' ')
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Số chính phương: 4 = 2^2, 9 = 3^3, 16 = 4^4,... -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="color: rgb(29, 162, 97);">TÍNH TỔNG SỐ CHÍNH PHƯƠNG</h1>
+    <table>
+        <td>Số nguyên n:</td>
+        <td><input type="text" id="n" placeholder="Nhập số nguyên n"></td>
+        <tr>
+            <td>Tổng giá trị các số chính phương:</td>
+            <td><input type="text" id="kq" placeholder="Kết quả"></td>
+        </tr>
+        <td></td>
+        <td>
+            <button onclick="Tinh(); return false;">Tính</button>
+            <button onclick="Huy(); return false;">Hủy</button>
+        </td>
+    </table>
+
+
+    <script>
+        function Tinh() {
+            var n = document.getElementById("n").value
+            var sum = 0
+            for (var i = 1; i <= n; i++) {
+                if (Math.sqrt(i) % 1 == 0)
+                    sum += +i
+            }
+            document.getElementById("kq").value = sum
+        }
+        function Huy() {
+            document.getElementById("n").value = ""
+            document.getElementById("kq").value = ""
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0  auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fafafa;
+    align-items: center;
+}
+header .logo {
+    font-size: 60px;
+    color: blue;
+    font-weight: 900;
+}
+header .title {
+    width: 600px;
+}
+header .title h2 {
+    color: gray;
+    text-transform: uppercase;
+}
+header .title h3 {
+    color: red;
+}
+header .icon-social {
+    margin-top: 20px;
+}
+header .icon-social > img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.menu-box {
+    height: 30px;
+    background-color: #045199;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    list-style-type: none;
+    float: left;
+}
+.menu_item {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.menu_item:not(:first-child) {
+    margin-left: -5px;
+}
+.menu_item:hover {
+    background-color: #DAE5F1;
+}
+.menu_item:hover a {
+    color:#045199;
+}
+.menu_item > a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.search-box input {
+    padding: 2px 5px;
+}
+.search-icon {
+    width: 28px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.slider {
+    height: 300px;
+}
+.slider img {
+    height: 300px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+section {
+    width: 30%;
+    padding: 0 30px;
+    margin: 10px 0;
+}
+section:not(:last-child) {
+    border-right: 1px solid lightgray;
+}
+section > h3 {
+    text-transform: uppercase;
+    color: #045199;
+}
+section .image {
+    margin: 10px 0;
+}
+section button {
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+footer {
+    height: 120px;
+    background-color: #0e4b8a;
+    padding: 10px 0;
+}
+.footer-left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.infor_item {
+    margin: 0 20px;
+}
+.infor_item h4,
+.footer-right h4 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 5px;
+}
+.infor_item ul,
+.footer-right .desc {
+    color: rgba(255, 255, 255, 0.562);
+    list-style-position: inside;
+    font-size: 14px;
+}
+.footer-right {
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding-right: 60px;
+}

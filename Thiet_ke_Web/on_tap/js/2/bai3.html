@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+        thead th {
+            text-align: left;
+            background-color: #336699;
+        }
+        tbody td {
+            width: 300px;
+        } 
+        input[type="text"] {
+            width: 220px;
+        }
+        .button {
+            text-align: center;
+        }
+        input[type="button"] {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th colspan="2">Bài tập về chuỗi</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Câu nhập vào</td>
+                <td>
+                    <input type="text" id="input">
+                </td>
+            </tr>
+            <tr>
+                <td>Số từ</td>
+                <td>
+                    <input type="text" id="output-1" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Câu đã chuẩn hóa</td>
+                <td>
+                    <input type="text" id="output-2" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td class="button">
+                    <input type="button" value="Đếm từ" id="count-word">
+                </td>
+                <td class="button">
+                    <input type="button" value="Xuất câu" id="output-str">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const $ = document.getElementById.bind(document)
+
+        const input = $('input')
+        const showTotalWord = $('output-1')
+        const showNewStr = $('output-2')
+        const countWordBtn = $('count-word')
+        const showNewStrBtn = $('output-str')
+
+        countWordBtn.onclick = function() {
+            showTotalWord.value = input.value.trim().split(/\s+/).length
+        }
+
+        showNewStrBtn.onclick = function() {
+            var str = input.value.trim().toLowerCase().split(/\s+/)
+            var newStr = str.join(' ')
+            newStr = newStr.charAt(0).toUpperCase() + newStr.slice(1)
+            showNewStr.value = newStr
+        }
+    </script>
+
+</body>
+</html>

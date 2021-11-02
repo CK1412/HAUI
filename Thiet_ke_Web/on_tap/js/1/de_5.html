@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        header,
+        footer {
+            height: 50px;
+            line-height: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .body {
+            display: flex;
+        }
+
+        .menu,
+        .submenu {
+            list-style-type: none;
+            display: inline-block;
+            min-width: 300px;
+        }
+
+        .menu li {
+            background-color: rgb(29, 162, 97);
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+
+        .menu>li {
+            position: relative;
+        }
+
+        .menu li:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .menu a {
+            color: white;
+        }
+
+        .menu li:hover a {
+            color: yellow;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            padding-top: 10px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        form {
+            background-color: blue;
+            width: 80%;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+
+        form .title {
+            text-align: center;
+            padding-bottom: 15px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .text_box {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .lable {
+            display: inline-block;
+            color: white;
+            width: 250px;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            font-size: inherit;
+        }
+
+        input[type="submit"] {
+            font-size: 16px;
+            background-color: lightgray;
+            cursor: pointer;
+            margin: 0 auto;
+            display: block;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            bài kiểm tra số 2
+        </header>
+        <div class="body">
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="">Lập trình Java</a></li>
+                    <li>
+                        <a href="">Thiết kế Web</a>
+                        <ul class="submenu">
+                            <li><a href="">Tài liệu HTML</a></li>
+                            <li><a href="">Tài liệu CSS</a></li>
+                            <li><a href="">Tài liệu Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Lập trình C#</a></li>
+                    <li><a href="">Lập trình web</a></li>
+                    <li><a href="">Lập trình hướng đối tượng</a></li>
+                    <li><a href="">Cơ sở dữ liệu</a></li>
+                </ul>
+            </div>
+            <section>
+                <form action="" onsubmit="return false">
+                    <div class="title">
+                        <h3>đếm số từ trong câu</h3>
+                    </div>
+                    <div class="text_box">
+                        <span class="lable">Nhập một câu</span>
+                        <input type="text" placeholder="Nhập một chuỗi" id="input" required>
+                    </div>
+                    <div class="text_box">
+                        <span class="lable">Số từ trong câu</span>
+                        <input type="text" id="output" readonly>
+                    </div>
+                    <input type="submit" value="Đếm" id="submit">
+                </form>
+
+            </section>
+        </div>
+        <footer>
+            bản quyền thuộc về test 2
+        </footer>
+    </div>
+
+    <script>
+        var input = document.getElementById('input')
+        var output = document.getElementById('output')
+        var submitData = document.getElementById('submit')
+
+        submitData.onclick = function () {
+            var str = input.value.trim()
+
+            if (input.value != '') {
+                output.value = (str.length == 0) ? 0 : str.split(/\s+/).length
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

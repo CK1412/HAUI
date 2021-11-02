@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Số nguyên tố: 2, 3, 5, 7, 11... -là số chia hết cho chính nó và 1.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="color: rgb(29, 162, 97);">TÍNH TỔNG SỐ NGUYÊN TỐ</h1>
+    <table>
+        <td>Nhập n:</td>
+        <td><input type="text" id="n" placeholder="Nhập số nguyên n"></td>
+        <tr>
+            <td>Tổng n số nguyên tố đầu tiên:</td>
+            <td><input type="text" id="kq" placeholder="Kết quả"></td>
+        </tr>
+        <td></td>
+        <td>
+            <button onclick="Tinh(); return false;">Tính</button>
+            <button onclick="Huy(); return false;">Hủy</button>
+        </td>
+    </table>
+
+    <script>
+        function SoNguyenTo(m) {
+            for(var i = 2; i <= Math.sqrt(m); i++)
+                if(m % i == 0)
+                    return false
+            return true
+        }
+        function Tinh() {
+            var n = document.getElementById("n").value
+            var sum = 0
+            for (var i = 2; i <= n; i++) {
+                if (SoNguyenTo(i))
+                    sum += +i
+            }
+            document.getElementById("kq").value = sum
+        }
+        function Huy() {
+            document.getElementById("n").value = ""
+            document.getElementById("kq").value = ""
+        }
+    </script>
+
+</body>
+
+</html>
