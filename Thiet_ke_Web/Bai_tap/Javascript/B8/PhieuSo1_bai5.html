@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "hello world"
+        document.write('Chuỗi ban đầu: '+ str)
+        document.write("<br>")
+        document.write('Chuỗi mới: ' + UppercaseWords(str))
+
+        function UppercaseWords(str) {
+            // chuyển về mảng chữ thường
+            var arrs = str.toLowerCase().split(" ")
+            
+            // viết hoa chữ cái đầu mỗi phần tử
+            for(var i = 0; i < arrs.length; i++) {
+                arrs[i] = arrs[i].charAt(0).toUpperCase() + arrs[i].substring(1)
+            }
+            
+            // chuyển ngược về chuỗi
+            str = arrs.join(" ")
+            return str
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng kết quả học tập</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 800px;
+            margin: 0 auto;
+        }
+        table, tr, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;  /* thu gọn thành 1 đường viền */
+        }
+        .align-center {
+            text-align: center;
+        }
+        .align-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h1>Bảng kết quả thi môn lập trình C</h1></caption>
+        <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Họ và tên</th>
+                <th colspan="2">Năm sinh</th>
+                <th colspan="2">Kết quả</th>
+                <th rowspan="2">Xếp loại</th>
+            </tr>
+            <tr>
+                <th>Nam</th>
+                <th>Nữ</th>
+                <th>Lý thuyết</th>
+                <th>Thực hành</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td class = "align-center">1</td>
+                <td>Nguyễn Thị Vân Anh</td>
+                <td></td>
+                <td class = "align-center">1980</td>
+                <td class = "align-right">80</td>
+                <td class = "align-right">90</td>
+                <td class = "align-center">Giỏi</td>
+            </tr>
+            <tr>
+                <td class = "align-center">2</td>
+                <td>Hoàng Văn Bách</td>
+                <td class = "align-center">1981</td>
+                <td></td>
+                <td class = "align-right">50</td>
+                <td class = "align-right">50</td>
+                <td class = "align-center">Trung bình</td>
+            </tr>
+            <tr>
+                <td class = "align-center">3</td>
+                <td>Huỳnh Tuấn Phát</td>
+                <td class = "align-center">1981</td>
+                <td></td>
+                <td class = "align-right">70</td>
+                <td class = "align-right">70</td>
+                <td class = "align-center">Khá</td>
+            </tr>
+            <tr>
+                <td class = "align-center">4</td>
+                <td>Hoàng Diệu Thanh</td>
+                <td></td>
+                <td class = "align-center">1982</td>
+                <td class = "align-right">90</td>
+                <td class = "align-right">100</td>
+                <td class = "align-center">Xuất sắc</td>
+            </tr>
+        </tbody> 
+    </table>
+</body>
+</html>

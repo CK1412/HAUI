@@ -1,0 +1,14 @@
+h1 {
+    text-align: left;
+    border-bottom: 2px solid black;
+    background-color: #ff996f;
+    font-family: 'Courier New', Courier, monospace;
+}
+table, tr, th, td {
+    border-collapse: collapse;
+    border-color: #cc0000;
+}
+th {
+    color: white;
+    background-color: orangered;
+}

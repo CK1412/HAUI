@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: inline-block;
+            width: 100px;
+            margin: 0;
+        }
+        .operators {
+            margin-left: 104px;
+        }
+        .btn {
+            width: 40px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>Số thứ nhất</p> <input type="text" name="n1" id="n1">
+        <br>
+        <br>
+        <div class="operators">
+            <input class="btn" type="button" value="+" onclick="myCalculator(this.value)">
+            <input class="btn" type="button" value="-" onclick="myCalculator(this.value)">
+            <input class="btn" type="button" value="*" onclick="myCalculator(this.value)">
+            <input class="btn" type="button" value="/" onclick="myCalculator(this.value)">
+            <input class="btn" type="button" value="**" onclick="myCalculator(this.value)">
+        </div>
+        <br>
+        <p>Số thứ hai</p> <input type="text" name="n2" id="n2">
+        <br>
+        <br>
+        <p>Kết quả</p> <input type="text" name="result" id="result">
+    </form>
+
+    <script>
+        const n1 = document.getElementById('n1');
+        const n2 = document.getElementById('n2');
+        const display = document.getElementById('result')
+
+    function myCalculator(operator) {
+        if(n1.value === '' || n2.value === '') {
+            alert('Vui lòng nhập đủ giá trị')
+        }
+        else {
+            if(operator === '/' && n2.value === '0') {
+                alert('Vui lòng nhập mẫu khác 0')
+            }
+            else {
+                display.value = eval(n1.value + operator + n2.value)
+            }   
+        }   
+    }
+        
+    </script>
+</body>
+</html>

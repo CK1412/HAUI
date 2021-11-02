@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        form {
+            display: block;
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 0 10px 10px;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(46, 104, 8);
+        }
+        table {
+            width: 100%;
+            
+        }
+        table,tr,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr {
+            background: rgb(140, 252, 227);
+        }
+        th {
+            text-align: left;
+            width: 200px;
+        }
+        td {
+            width: 400px;
+        }
+        .o {
+            width: 200px;
+        }
+        .a {
+            text-align: center;
+            padding: 4px 0;
+        }
+        .b:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <caption><h2>Phiếu đăng ký tham gia chương trình khuyến mãi</h2></caption>
+        <table>
+            <tr>
+                <th>Họ và tên</th>
+                <td>
+                    <input class="o" type="text" value="Nguyễn Ngọc Quỳnh Nga">
+                </td>
+            </tr>
+            <tr>
+                <th>Địa chỉ</th>
+                <td>
+                    <input class="o" type="text" value="2Bia Hùng Vương, Q10">
+                </td>
+            </tr>
+            <tr>
+                <th>Điện thoại</th>
+                <td>
+                    <input type="tel" value="0909097506">
+                </td>
+            </tr>
+            <tr>
+                <th>Phái</th>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Nghề nghiệp</th>
+                <td>
+                    <input class="o" list="jobs" name="job">
+                    <datalist id = "jobs">
+                        <option value="Giáo viên"></option>
+                        <option value="Sinh viên"></option>
+                        <option value="Học sinh"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <th>Chọn sản phẩm tham gia</th>
+                <td>
+                    <select class="o" name="Product" id="procs">
+                        <option value="Kem đánh răng" selected>Kem đánh răng</option>
+                        <option value="Bột giặt">Bột giặt</option>
+                        <option value="Dầu gội đầu" selected>Dầu gội đầu</option>
+                        <option value="Sữa tắm">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Số người dự đoán tham gia</th>
+                <td>
+                    <input type="number" name="Number" id="numbers">
+                </td>
+            </tr>
+            <tr>
+                <td class = "a" colspan="2">
+                    <input class = "b" type="button" value="Đồng ý">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

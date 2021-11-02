@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+            background-color: #ADD8E6;
+            text-align: center;
+            font-weight: bold;
+        }
+        td {
+            padding: 0 20px;
+        }
+        input[type="text"] {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">IN GIÁ TRỊ CỦA MẢNG</td>
+        </tr>
+        <tr>
+            <td>Nhập mảng:</td>
+            <td><input type="text" id="input"></td>
+        </tr>
+        <tr>
+            <td>Hiển thị các phần tử mảng theo chiều ngược lại</td>
+            <td><input type="text" id="output"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" id="delete" value="Xóa">
+                <input type="button" id="display" value="Tính">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        const input = document.getElementById("input");
+        const output = document.getElementById("output");
+
+        const deleteValue = document.getElementById("delete");
+        const displayValue = document.getElementById("display");
+
+        displayValue.onclick = function() {
+            var array = input.value.split(',')
+            
+            array.reverse()
+            return output.value = array
+        }
+        deleteValue.onclick = function() {
+            input.value = ''
+            output.value = ''
+        }
+    </script>
+</body>
+</html>

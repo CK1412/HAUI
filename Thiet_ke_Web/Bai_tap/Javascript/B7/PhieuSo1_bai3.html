@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./turn off the light.gif">
+
+    <script>
+        var lightBulb = document.querySelector('img')
+        var turnOn = false
+        lightBulb.onclick = function() {
+            turnOn = !turnOn
+            if(turnOn) {
+                lightBulb.src = "./turn on the light.gif"
+            }
+            else {
+                lightBulb.src = "./turn off the light.gif"
+            }
+        }
+    </script>
+</body>
+</html>

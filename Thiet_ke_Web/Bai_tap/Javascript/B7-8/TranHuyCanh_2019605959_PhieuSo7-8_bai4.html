@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-box {
+            width: 400px;
+            height: auto;
+            border: 1px solid black;
+            margin: 100px auto 0;
+        }
+        header {
+            border-bottom:  1px solid black;
+            padding: 20px 0;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+        form {
+            padding: 10px 3px;
+            text-align: center;
+        }
+        form > div {
+            margin: 10px;
+        }
+        span {
+            display: inline-block;
+            min-width: 100px;
+        }
+        input[type="text"] {
+            padding: 3px;
+        }
+        .remember {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <header>
+            Login Information
+        </header>
+        <form>
+            <div>
+                <span>Username:</span> 
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <span>Password:</span> 
+                <input type="text" id="password" required>
+            </div>
+            <div class="remember">
+                <input type="checkbox"> Remember Set
+            </div>
+
+            <button type="submit" id="submit">Login</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+    </div>
+
+
+    <script>
+        var correct_UserName = 'admin'
+        var correct_Password = '123456a@'
+
+        const inputUsername = document.getElementById('username')
+        const inputPassword = document.getElementById('password')
+        const submit = document.getElementById('submit')
+        const reset = document.getElementById('reset')
+
+        var regex = /^(\D)(?=.*[A-Z]+?).{7,}$/
+
+        submit.addEventListener('click', function(e) {
+            e.preventDefault()
+            if(inputUsername.value == correct_UserName && inputPassword.value == correct_Password) {
+                alert('Bạn đã đăng nhập thành công')
+            }
+            else {
+                if(!regex.test(inputPassword.value)) {
+                    alert('Vui lòng nhập mật khẩu tối thiểu 8 kí tự, không bắt đầu bằng chữ số và có ít nhất 1 chữ hoa')
+                }
+            }
+        })
+        
+    </script>
+</body>
+</html>

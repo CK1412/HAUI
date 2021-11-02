@@ -1,0 +1,9 @@
+table, tr, th, td {
+    font-family: 'Courier New', Courier, monospace;
+}
+th,
+tr td:first-child {
+    background-color: #660066;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        table, tr, td, thead, tbody, th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        img {
+            width: 100%;
+        }
+        .sidebar {
+            width: 300px;
+            list-style-type: circle;
+            text-align: left;
+            padding: 50px;
+            margin-top: -600px;
+        }
+        .sidebar li a {
+            color: blue;
+        }
+        .title {
+            color: white;
+            background-color: rgb(0, 119, 255);
+        }
+        .subtitle {
+            color: rgb(0, 140, 255);
+        }
+        .desc {
+            display: flex;
+        }
+        .desc img {
+            width: 100px;
+        }
+        .first-page {
+            float: right;
+            color: blue;
+            background-color: lightgray;
+        }
+        .list {
+            padding: 20px 3px 20px 70px;
+        }
+        .rignt-img {
+            float: right;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"><img src="./banner.png" alt=""></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="11">
+                        <ul class="sidebar">
+                            <li><a href="#1">Tình yêu và gia đình</a></li>
+                            <li><a href="#2">Sức khỏe</a></li>
+                            <li><a href="#3">Du lịch</a></li>
+                            <li><a href="#4">Ẩm thực</a></li>
+                            <li><a href="#5">Âm nhạc</a></li>
+                        </ul>
+                    </th>
+                    <td>
+                        <h2 class="title" id="1">Tình yêu và gia đình</h2>
+                        <h3 class="subtitle">Trầu cau</h3>
+                        <div class="desc">
+                            <img src="./1.png" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nam facere vel vero inventore officiis repellendus harum alias neque iste fugit, quas suscipit corrupti minima, aliquam porro minus ratione odit.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="subtitle">Xây dựng hạnh phúc và gia đình qua những bữa cơm hằng ngày</h3>
+                        <div class="desc">
+                            <img src="./2.png" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nam facere vel vero inventore officiis repellendus harum alias neque iste fugit, quas suscipit corrupti minima, aliquam porro minus ratione odit.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2 class="title" id="2">Sức khỏe</h2>
+                        <h3 class="subtitle">10 lời khuyên trong dinh dưỡng</h3>
+                        <div class="desc">
+                            <img src="./3.png" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nam facere vel vero inventore officiis repellendus harum alias neque iste fugit, quas suscipit corrupti minima, aliquam porro minus ratione odit.</p>
+                        </div>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <h3 class="subtitle">Làm sao để bỏ thuốc lá?</h3>
+                        <div class="desc">
+                            <img src="./4.png" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nam facere vel vero inventore officiis repellendus harum alias neque iste fugit, quas suscipit corrupti minima, aliquam porro minus ratione odit.</p>
+                        </div>
+                        <a class="first-page" href="#">Về đầu trang</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2 class="title" id="3">Du lịch</h2>
+                        <h3 class="subtitle">Các tour mới nhất</h3>
+                        <ul class="list">
+                            <li>Lorem ipsum dolor, sit amet consectetur</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="subtitle">Các điểm du lịch nổi tiếng trên thế giới</h3>
+                        <ul class="list">
+                            <li>Lorem ipsum dolor, sit amet consectetur</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur</li>
+                        </ul>
+                        <a class="first-page" href="#">Về đầu trang</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2 class="title" id="4">Ẩm thực</h2>
+                        <div>
+                            <img class="rignt-img" src="./5.png" alt="">
+                            <ul class="list">
+                                <li>Lorem ipsum dolor, sit amet consectetur</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2 class="title" id="5">Âm nhạc</h2>
+                        <h3 class="subtitle">Nhạc thiếu nhi</h3>
+                        <div>
+                            <img class="rignt-img" src="./6.png" alt="">
+                            <ul class="list">
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="subtitle">Dân ca</h3>
+                        <div>
+                            <img class="rignt-img" src="./7.png" alt="">
+                            <ul class="list">
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                        </div>
+                        <a class="first-page" href="#">Về đầu trang</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

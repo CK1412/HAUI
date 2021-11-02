@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr,td {
+            border: 1px solid black;
+            background-color: #ADD8E6;
+            text-align: center;
+            font-weight: bold;
+        }
+        td {
+            padding: 0 20px;
+        }
+        input[type="text"] {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">TÍNH GIÁ TRỊ CỦA MẢNG</td>
+        </tr>
+        <tr>
+            <td>Nhập mảng: </td>
+            <td><input type="text" id="inputArray"></td>
+        </tr>
+        <tr>
+            <td>Tổng các phần tử của mảng</td>
+            <td><input type="text" id="tong"></td>
+        </tr>
+        <tr>
+            <td>Tổng các phần tử có chỉ số chẵn</td>
+            <td><input type="text" id="tongChan"></td>
+        </tr>
+        <tr>
+            <td>Tổng các phần tử có chỉ số lẻ</td>
+            <td><input type="text" id="tongLe"></td>
+        </tr>
+        <tr>
+            <td>Tổng các phần tử có giá trị âm</td>
+            <td><input type="text" id="tongAm"></td>
+        </tr>
+        <tr>
+            <td>Tổng các phần tử có giá trị dương</td>
+            <td><input type="text" id="tongDuong"></td>
+        </tr>
+        <tr>
+            <td>Tổng các phần tử có giá trị chia hết cho 3</td>
+            <td><input type="text" id="tongChiaHet"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" id="delete" value="Xóa">
+                <input type="button" id="operator" value="Tính">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+       const input = document.getElementById('inputArray')
+
+       const tinhTong = document.getElementById('tong')
+       const tinhTongChan = document.getElementById('tongChan')
+       const tinhTongLe = document.getElementById('tongLe')
+       const tinhTongAm = document.getElementById('tongAm')
+       const tinhTongDuong = document.getElementById('tongDuong')
+       const tinhTongChiaHet = document.getElementById('tongChiaHet')
+
+        const operator = document.getElementById('operator')
+        const deleteValue = document.getElementById('delete')
+
+        var tong = 0
+        var tongChan = 0
+        var tongLe = 0
+        var tongAm = 0
+        var tongDuong = 0
+        var tongChiaHet = 0
+
+       operator.onclick = function() {  
+            var array = input.value.split(',')
+            for(var i = 0; i < array.length; i++) {
+                tong += +array[i]
+                if(i % 2 == 0) {
+                    tongChan += +array[i]
+                }
+                else {
+                    tongLe += +array[i]
+                }
+
+                if(array[i] < 0) {
+                    tongAm += +array[i]
+                }
+                else {
+                    tongDuong += +array[i]
+                }
+
+                if(array[i] % 3 == 0) {
+                    tongChiaHet += +array[i]
+                }
+            } 
+            tinhTong.value = tong
+            tinhTongChan.value = tongChan
+            tinhTongLe.value = tongLe
+            tinhTongAm.value = tongAm
+            tinhTongDuong.value = tongDuong
+            tinhTongChiaHet.value = tongChiaHet
+       }
+       
+       deleteValue.onclick = function() {
+            input.value = ''
+            tinhTong.value = ""
+            tinhTongChan.value = ""
+            tinhTongLe.value = ""
+            tinhTongAm.value = ""
+            tinhTongDuong.value = ""
+            tinhTongChiaHet.value = ""
+       }
+    </script>
+</body>
+</html>

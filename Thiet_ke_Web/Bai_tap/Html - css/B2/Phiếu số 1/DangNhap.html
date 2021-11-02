@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            display: block;
+            border: 6px double black;
+            width: 400px;
+            height: 200px;
+            margin: 30px auto 0 auto;
+        }
+        .input {
+            margin: 14px 30px;
+        }
+        .button {
+            margin: 30px auto;
+            text-align: center;
+        }
+        .title {
+            display: inline-block;
+            width: 100px;
+            margin-right: 40px; 
+        }
+        #acc,#pass {
+            width: 54%;
+        }
+        .a {
+            margin: auto 10px;
+        }
+        .a:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>ĐĂNG NHẬP DIỄN ĐÀN</h2>
+        <div class="input">
+            <label class="title" for="acc">Tên đăng nhập:</label>
+            <input type="text" id = "acc" name = "acc" value="hyhien">
+        </div>
+        <div class="input">
+            <label class="title" for="pass">Mật khẩu:</label>
+            <input type="password" id = "pass" name = "pass" required>
+        </div>
+        <div class="button">
+            <button class="a" type="submit">Đăng nhập</button>
+            <button class="a" type="reset">Phục hồi</button>
+        </div>
+    </form>
+</body>
+</html>

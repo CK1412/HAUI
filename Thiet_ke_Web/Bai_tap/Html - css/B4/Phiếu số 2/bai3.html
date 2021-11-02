@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu > ul {
+            list-style: none;
+            background: blue;
+            width: 1000px;
+            padding: 0;
+            display: inline-flex;
+            justify-content: space-between;
+            height: 50px;
+        }
+        #menu > ul > li {
+            display: inline-block;
+            width: 200px;
+            padding: 12px 0;
+            text-align: center;
+            position: relative;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        #menu > ul > li:hover {
+            background: red;
+        }
+        #haha {
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: 50px;
+            left: -50px;
+            height: 50px;
+            background: red;
+            list-style: none;
+            
+            padding: 0;
+        }
+        #haha > li {
+            display: inline-block;
+            color: white;
+            width: 100px;
+            padding: 12px 0;
+        }
+        #haha > li:first-child {
+            padding: 8px 0;
+        }
+        #menu > ul > li:hover #haha {
+            display: inline-flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <span id="menu">
+        <ul>
+            <li><a href="#">Chính trị - xã hội</a></li>
+            <li>
+                <a href="#">Thế giới</a>
+                <ul id="haha">
+                    <li><a href="">Thư viện pháp luật</a></li>
+                    <li><a href="">Sống khỏe</a></li>
+                    <li><a href="">Pháp luật</a></li>    
+                </ul>
+            </li>
+            <li><a href="#">Nhịp sống trẻ</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Kinh tế</a></li>
+        </ul>
+    </span>
+</body>
+</html>

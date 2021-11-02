@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr,td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        #title {
+            font-weight: bold;
+            background-color: #336699;
+        }
+        .left {
+            text-align: left;
+            padding-right: 50px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td class="left" colspan="2" id="title">Bài tập về chuỗi</td>
+            </tr>
+            <tr>
+                <td class="left">Câu nhập vào</td>
+                <td class="left"><input type="text" id="input"></td>
+            </tr>
+            <tr>
+                <td class="left">Số từ</td>
+                <td class="left"><input type="text" id="word"></td>
+            </tr>
+            <tr>
+                <td class="left">Câu đã chuẩn hóa</td>
+                <td class="left"><input type="text" id="output"></td>
+            </tr>
+            <tr >
+                <td><input class="center" type="button" id="countWord" value="Đếm từ"></td>
+                <td><input class="center" type="button" id="displayValue" value="Xuất câu"></td>
+            </tr>
+        </form>
+    </table>
+
+    <script>
+        const input = document.getElementById("input");
+        const word = document.getElementById("word");
+        const output = document.getElementById("output")
+
+        const countWord = document.getElementById("countWord")
+        const displayValue = document.getElementById("displayValue")
+
+        countWord.onclick = function() {
+            var count = input.value.split(/\s+/).length
+            word.value = count
+        }
+
+        displayValue.onclick = function() {
+            var str = input.value.split(/\s+/)
+            str[0] = str[0].charAt(0).toUpperCase() + str[0].substring(1)
+            output.value = str.join(' ')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu > ul {
+            width: 300px;
+            list-style: none;
+            padding: 0;
+            background: blue;
+
+        }
+        #menu > ul > li {
+            display: block;
+            height: 50px;
+            padding: 0 10px;
+        }
+        #menu > ul > li:hover {
+            background: red;
+            cursor: pointer;
+        }
+        #menu > ul > li:first-child {
+            position: relative;
+        }
+        a {
+            text-decoration: none;
+            color: white; 
+            line-height: 50px;
+        }
+        #menu2 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 300px;
+            width: 200px;
+            list-style: none;
+            background: red;
+        }
+        #menu > ul > li:first-child:hover #menu2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li>
+                <a href="#">Chính trị-xã hội</a>
+                <ul id="menu2">
+                    <li><a href="#">Thư viện pháp luật</a></li>
+                    <li><a href="#">Sống khỏe</a></li>
+                    <li><a href="#">Pháp luật</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Nhịp sống trẻ</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Kinh tế</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

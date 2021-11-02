@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        document.write('Mảng ban đầu: ' + arr1 );
+        document.write("<br>")
+        
+        var count = 0
+        var max = 0
+        var maxValue
+        
+        for (var i = 0; i < arr1.length; i++) {
+            for (var j = 0; j < arr1.length; j++) {
+                if(arr1[i] === arr1[j]) {
+                    count++;
+                }
+             }
+             if(count > max) {
+                 max = count
+                 maxValue = arr1[i]
+             }
+             count = 0
+            
+        }
+        document.write('Giá trị xuất hiện nhiều nhất: ' + maxValue + ' (' + max + ' lần)');
+    </script>
+</body>
+</html>
