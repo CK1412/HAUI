@@ -1,0 +1,16 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\de_01.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\de_01.deps.json
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\de_01.runtimeconfig.json
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\de_01.runtimeconfig.dev.json
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\de_01.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\ref\de_01.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\bin\Debug\net5.0\de_01.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.AssemblyInfoInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.AssemblyInfo.cs
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\ref\de_01.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\de_01\obj\Debug\net5.0\de_01.genruntimeconfig.cache
