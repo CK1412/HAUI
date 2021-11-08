@@ -10,7 +10,7 @@
 |  06  | [BÀI 6](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_6) | Bài tập về class, interface, inheritance | 
 |  07  | [BÀI 7](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7) | [Delegate, anonymous method, lambda expression, anonymous type](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7/Bai7-de-cuong-bai-hoc.pdf) | 
 
-# Đề kiểm tra, đề thi minh họa (C#,Winform)
+# Đề kiểm tra minh họa (C#,WPF)
 
 |  STT |   Đề bài   |          Lời giải           |   Nội dung    |
 |:----:|------------|----------------------------|-------------|
@@ -18,3 +18,4 @@
 |  02  | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Đề-kiểm-tra-TX1.pdf) | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/De_kiem_tra_TX_1/) | về OOP (thêm, hiển thị danh sách, sắp xếp)|
 |  03  | [Đề 01](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/de_01.pdf) | [Đề 01](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/de_01/) | về OOP (thêm, hiển thị danh sách, sắp xếp) |
 |  04  | [Đề 03](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/de_03.pdf) | [Đề 03](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/De_03/) | về OOP (thêm, sửa, hiển thị danh sách) |
+|  05  | [Đề kiểm tra 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Kiemtra1.pdf) | [Đề kiểm tra 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/KiemTra1/) | về OOP (thêm, xóa, hiển thị danh sách) |
