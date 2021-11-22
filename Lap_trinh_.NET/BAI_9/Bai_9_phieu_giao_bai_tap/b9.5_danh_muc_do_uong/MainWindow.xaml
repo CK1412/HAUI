@@ -1,0 +1,59 @@
+﻿<Window x:Class="b9._5_danh_muc_do_uong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:b9._5_danh_muc_do_uong"
+        mc:Ignorable="d"
+        Title="Danh mục đồ uống" Height="466" Width="400">
+
+    <Grid Margin="10">
+        <Grid Margin="0,0,0,125">
+            <Border BorderBrush="Blue" BorderThickness="1" Padding="5,5,0,0">
+                <ListBox >
+                    <ListBoxItem Background="#F6EABE">
+                        <CheckBox x:Name="chkBoxOrangeJuice">
+                            <WrapPanel>
+                                <Image Width="50" Height="50" Source="images/1.jpg"></Image>
+                                <Label VerticalContentAlignment="Center" FontSize="20" FontStyle="Italic">Nước cam tươi</Label>
+                            </WrapPanel>
+                        </CheckBox> 
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <CheckBox x:Name="chkBoxKiwiJuice">
+                            <WrapPanel>
+                                <Image Width="50" Height="50" Source="images/2.jpg"></Image>
+                                <Label VerticalContentAlignment="Center" FontSize="20" FontStyle="Italic">Nước kiwi ép</Label>
+                            </WrapPanel>
+                        </CheckBox>
+                    </ListBoxItem>
+                    <ListBoxItem Background="#F6EABE">
+                        <CheckBox x:Name="chkBoxMangoJuice">
+                            <WrapPanel>
+                                <Image Width="50" Height="50" Source="images/3.jpg"></Image>
+                                <Label VerticalContentAlignment="Center" FontSize="20" FontStyle="Italic">Nước xoài ép</Label>
+                            </WrapPanel>
+                        </CheckBox>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <CheckBox x:Name="chkBoxFreshMilk">
+                            <WrapPanel>
+                                <Image Width="50" Height="50" Source="images/4.jpg"></Image>
+                                <Label VerticalContentAlignment="Center" FontSize="20" FontStyle="Italic">Sữa tươi tiệt trùng</Label>
+                            </WrapPanel>
+                        </CheckBox>
+                    </ListBoxItem>
+                    <ListBoxItem Background="#F6EABE">
+                        <CheckBox x:Name="chkBoxCoffee">
+                            <WrapPanel>
+                                <Image Width="50" Height="50" Source="images/5.jpg"></Image>
+                                <Label VerticalContentAlignment="Center" FontSize="20" FontStyle="Italic">Cà phê Espresso</Label>
+                            </WrapPanel>
+                        </CheckBox>
+                    </ListBoxItem>
+                </ListBox>
+            </Border>
+        </Grid>
+        <Button Content="Gọi đồ uống" HorizontalAlignment="Center" Height="36" Margin="0,338,0,0" VerticalAlignment="Top" Width="148" FontSize="14" Click="Button_Click"/>
+    </Grid>
+</Window>

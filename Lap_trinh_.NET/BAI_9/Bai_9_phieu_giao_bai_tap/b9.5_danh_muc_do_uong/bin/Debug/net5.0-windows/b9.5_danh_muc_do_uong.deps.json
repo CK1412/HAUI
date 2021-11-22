@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "b9.5_danh_muc_do_uong/1.0.0": {
+        "runtime": {
+          "b9.5_danh_muc_do_uong.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "b9.5_danh_muc_do_uong/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
