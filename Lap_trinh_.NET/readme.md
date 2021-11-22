@@ -9,6 +9,9 @@
 |  05  | [BÀI 5](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_5) | Bài tập về class | 
 |  06  | [BÀI 6](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_6) | Bài tập về class, interface, inheritance | 
 |  07  | [BÀI 7](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7) | [Delegate, anonymous method, lambda expression, anonymous type](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_7/Bai7-de-cuong-bai-hoc.pdf) | 
+|  09  | [BÀI 9](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_9) | [Giao diện đồ hoạ với WPF](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_9/Bài%209.%20Đề%20cương%20bài%20giảng.pdf) | 
+|  10  | [BÀI 10](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_10) | [Phát triển ứng dụng giao diện đồ hoạ](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_10/Bài%2010.%20Đề%20cương%20bài%20giảng.pdf) | 
+|  11  | [BÀI 11](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_11) | [Truy vấn và xử lí dữ liệu với Entity Framework Core](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_11/Bai11-de-cuong-bai-hoc.pdf) | 
 
 # Đề kiểm tra minh họa (C#,WPF)
 
