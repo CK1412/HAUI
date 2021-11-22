@@ -1,0 +1,23 @@
+﻿<Window x:Class="b9._1_chuong_trinh_chon_sach.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:b9._1_chuong_trinh_chon_sach"
+        mc:Ignorable="d"
+        Title="Chọn sách" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#d5d5d5" Margin="10">
+        <Label Content="Danh sách" HorizontalAlignment="Left" Height="37" Margin="23,10,0,0" VerticalAlignment="Top" Width="118" FontSize="16"/>
+        <ListBox x:Name="listBoxLeft" HorizontalAlignment="Left" Height="340" Margin="23,47,0,0" VerticalAlignment="Top" Width="262"/>
+        <Label Content="Sách đã chọn" HorizontalAlignment="Left" Height="37" Margin="495,10,0,0" VerticalAlignment="Top" Width="118" FontSize="16"/>
+        <ListBox x:Name="listBoxRight" HorizontalAlignment="Left" Height="340" Margin="495,47,0,0" VerticalAlignment="Top" Width="261"/>
+        <Button x:Name="btnToRight" Content="&gt;" HorizontalAlignment="Center" Height="34" Margin="0,129,0,0" VerticalAlignment="Top" Width="76" FontSize="18" Click="btnToRight_Click"/>
+        <Button x:Name="btnALlToRight" Content="&gt;&gt;" HorizontalAlignment="Center" Height="34" Margin="0,181,0,0" VerticalAlignment="Top" Width="76" FontSize="18" Click="btnALlToRight_Click"/>
+        <Button x:Name="btnToLeft" Content="&lt;" HorizontalAlignment="Center" Height="34" Margin="0,233,0,0" VerticalAlignment="Top" Width="76" FontSize="18" Click="btnToLeft_Click"/>
+        <Button x:Name="btnAllToLeft" Content="&lt;&lt;" HorizontalAlignment="Center" Height="34" Margin="0,283,0,0" VerticalAlignment="Top" Width="76" FontSize="18" Click="btnAllToLeft_Click"/>
+        <Button x:Name="btnExit" Content="Thoát" HorizontalAlignment="Left" Height="34" Margin="680,406,0,0" VerticalAlignment="Top" Width="76" FontSize="18" Click="btnExit_Click"/>
+
+
+    </Grid>
+</Window>

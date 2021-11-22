@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "b9.2_quan_ly_nhan_vien/1.0.0": {
+        "runtime": {
+          "b9.2_quan_ly_nhan_vien.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "b9.2_quan_ly_nhan_vien/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
