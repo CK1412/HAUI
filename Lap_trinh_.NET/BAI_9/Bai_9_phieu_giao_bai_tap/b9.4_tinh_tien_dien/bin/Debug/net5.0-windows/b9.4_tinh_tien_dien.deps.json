@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "b9.4_tinh_tien_dien/1.0.0": {
+        "runtime": {
+          "b9.4_tinh_tien_dien.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "b9.4_tinh_tien_dien/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

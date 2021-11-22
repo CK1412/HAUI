@@ -1,0 +1,9 @@
+﻿<Application x:Class="b9._3_cap_nhat_thanh_vien.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:b9._3_cap_nhat_thanh_vien"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

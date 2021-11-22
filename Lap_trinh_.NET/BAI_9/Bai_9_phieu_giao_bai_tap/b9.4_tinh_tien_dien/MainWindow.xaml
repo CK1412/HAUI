@@ -1,0 +1,39 @@
+﻿<Window x:Class="b9._4_tinh_tien_dien.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:b9._4_tinh_tien_dien"
+        mc:Ignorable="d"
+        Title="Tính tiền điện" Height="500" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10" Background="LightBlue">
+        <Label Content="Bảng Tính Tiền Điện" HorizontalAlignment="Center" Height="49" VerticalAlignment="Top" Width="364" Foreground="#FFEC2424" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label Content="Họ tên khách hàng :" HorizontalAlignment="Left" Height="33" Margin="40,54,0,0" VerticalAlignment="Top" Width="141" FontSize="14"/>
+        <Label Content="Chỉ số cũ :" HorizontalAlignment="Left" Height="33" Margin="40,100,0,0" VerticalAlignment="Top" Width="106" FontSize="14"/>
+        <Label Content="Chỉ số mới :" HorizontalAlignment="Left" Height="34" Margin="42,142,0,0" VerticalAlignment="Top" Width="102" FontSize="14"/>
+        <Label Content="Số kw tiêu thụ" HorizontalAlignment="Left" Height="33" Margin="42,187,0,0" VerticalAlignment="Top" Width="114" FontSize="14"/>
+        <Label Content="Tổng tiền phải trả :" HorizontalAlignment="Left" Height="33" Margin="64,242,0,0" VerticalAlignment="Top" Width="142" FontSize="14" HorizontalContentAlignment="Center"/>
+        <Label Content="Số kw trong định mức :" HorizontalAlignment="Left" Height="33" Margin="278,100,0,0" VerticalAlignment="Top" Width="166" FontSize="14"/>
+        <Label Content="Số kw vượt định mức :" HorizontalAlignment="Left" Height="33" Margin="278,143,0,0" VerticalAlignment="Top" Width="155" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="64" Margin="282,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="14">
+            Định mức là 50kw
+            <LineBreak/>
+            Trong định mức là 500đ/1kw
+            <LineBreak/>
+            Vượt định mức là 1000đ/1kw
+        </TextBlock>
+        <ComboBox x:Name="cbBoxName" HorizontalAlignment="Left" Height="30" Margin="208,54,0,0" VerticalAlignment="Top" Width="192" FontSize="14" SelectedIndex="0" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding SelectedItem.oldIndex, ElementName=cbBoxName}" IsReadOnly="True" HorizontalAlignment="Left" Height="34" Margin="160,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontSize="14" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding SelectedItem.newIndex, ElementName=cbBoxName}" IsReadOnly="True" HorizontalAlignment="Left" Height="34" Margin="161,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" FontSize="14" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding SelectedItem.soKwTrongDinhMuc, ElementName=cbBoxName}" IsReadOnly="True" HorizontalAlignment="Left" Height="34" Margin="444,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" FontSize="14" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding SelectedItem.soKwVuotDinhMuc, ElementName=cbBoxName}" IsReadOnly="True" HorizontalAlignment="Left" Height="34" Margin="444,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" FontSize="14" VerticalContentAlignment="Center"/>
+        <TextBox Text="{Binding SelectedItem.chiSoTieuThu, ElementName=cbBoxName}" IsReadOnly="True" HorizontalAlignment="Left" Height="34" Margin="161,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" FontSize="14" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtBoxTotalMoney" IsReadOnly="True" HorizontalAlignment="Left" Height="34" Margin="40,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="14" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnCalculated" Content="Tính" HorizontalAlignment="Left" Height="34" Margin="42,326,0,0" VerticalAlignment="Top" Width="86" FontSize="14" Click="btnCalculated_Click"/>
+        <Button x:Name="btnPrint" Content="In" HorizontalAlignment="Left" Height="33" Margin="144,326,0,0" VerticalAlignment="Top" Width="86" FontSize="14" Click="btnPrint_Click"/>
+        <Button x:Name="btnExit" Content="Thoát" HorizontalAlignment="Left" Height="33" Margin="92,371,0,0" VerticalAlignment="Top" Width="86" FontSize="14" Click="btnExit_Click"/>
+        <TextBlock x:Name="txtBlockShow" HorizontalAlignment="Left" Height="139" Margin="278,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Background="White" FontSize="14"/>
+
+    </Grid>
+</Window>
