@@ -12,7 +12,7 @@
 |  09  | [BÀI 9](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_9) | [Giao diện đồ hoạ với WPF](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_9/Bài%209.%20Đề%20cương%20bài%20giảng.pdf) | 
 |  10  | [BÀI 10](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_10) | [Phát triển ứng dụng giao diện đồ hoạ](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_10/Bài%2010.%20Đề%20cương%20bài%20giảng.pdf) | 
 |  11  | [BÀI 11](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_11) | [Truy vấn và xử lí dữ liệu với Entity Framework Core](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_11/Bai11-de-cuong-bai-hoc.pdf) | 
-
+|  12  | [BÀI 12](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_12) | Bài tập về Kết nối Database |
 # Đề kiểm tra minh họa (C#,WPF)
 
 |  STT |   Đề bài   |          Lời giải           |   Nội dung    |
