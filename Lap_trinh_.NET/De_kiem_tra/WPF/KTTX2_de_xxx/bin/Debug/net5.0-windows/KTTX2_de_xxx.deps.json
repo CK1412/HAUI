@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "KTTX2_de_xxx/1.0.0": {
+        "runtime": {
+          "KTTX2_de_xxx.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KTTX2_de_xxx/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

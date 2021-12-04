@@ -1,0 +1,24 @@
+﻿<Window x:Class="KTTX2_de_xxx.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KTTX2_de_xxx"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        FontSize="16">
+    <Grid Background="LightPink">
+        <Label Content="Thông tin chi tiết" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Width="347" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label Content="Họ tên" HorizontalAlignment="Left" Margin="125,83,0,0" VerticalAlignment="Top"/>
+        <Label Content="Địa chỉ" HorizontalAlignment="Left" Margin="125,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Số điện dùng" HorizontalAlignment="Left" Margin="125,199,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ngày tháng" HorizontalAlignment="Left" Margin="125,249,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxHoTen" IsEnabled="False" HorizontalAlignment="Left" Margin="426,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="36"/>
+        <ComboBox x:Name="comboBoxDiaChi" IsEditable="True" IsEnabled="False" HorizontalAlignment="Left" Margin="426,139,0,0" VerticalAlignment="Top" Width="260" SelectedIndex="0" Height="36"/>
+        <TextBox x:Name="textBoxSoĐienDung" IsEnabled="False" HorizontalAlignment="Left" Margin="426,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="260" Height="36"/>
+        <DatePicker x:Name="datePicker"  IsEnabled="False" HorizontalAlignment="Left" Margin="426,253,0,0" VerticalAlignment="Top" Width="260" Height="36" VerticalContentAlignment="Center"/>
+        <Button x:Name="buttonDong" Content="Đóng" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="buttonDong_Click"/>
+
+    </Grid>
+</Window>
