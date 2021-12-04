@@ -1,0 +1,23 @@
+﻿<Window x:Class="KTTX2_de_3.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KTTX2_de_3"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        FontSize="16">
+    <Grid>
+        <Label Content="Quản lý nhân viên" Foreground="Blue" FontSize="30" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Width="204" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label Content="Họ tên nhân viên" HorizontalAlignment="Left" Margin="111,99,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Loại nhân viên" HorizontalAlignment="Left" Margin="111,154,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Ngày sinh" HorizontalAlignment="Left" Margin="111,206,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Số tiền bán hàng" HorizontalAlignment="Left" Margin="111,260,0,0" VerticalAlignment="Top" Width="162"/>
+        <TextBox x:Name="textBoxHoTenNV" IsReadOnly="True" HorizontalAlignment="Left" Margin="330,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="36"/>
+        <ComboBox x:Name="comboBoxLoaiNV" IsReadOnly="True" HorizontalAlignment="Left" Margin="330,152,0,0" VerticalAlignment="Top" Width="200" IsEditable="True" Height="36"/>
+        <DatePicker x:Name="datePickerNgaySinh" IsEnabled="False" Width="260" Height="36" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="330,204,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxSoTienBanHang" IsReadOnly="True" HorizontalAlignment="Left" Margin="330,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="36"/>
+        <Button x:Name="buttonThoat" Content="Thoát" HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" Width="140" Height="43" Click="buttonThoat_Click"/>
+    </Grid>
+</Window>

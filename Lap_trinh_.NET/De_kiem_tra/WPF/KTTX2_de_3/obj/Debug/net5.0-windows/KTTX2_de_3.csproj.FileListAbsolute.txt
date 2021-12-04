@@ -1,0 +1,48 @@
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.exe
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.deps.json
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.runtimeconfig.json
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.runtimeconfig.dev.json
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\ref\KTTX2_de_3.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.csproj.AssemblyReference.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\MainWindow.g.cs
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\Window2.g.cs
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\App.g.cs
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3_MarkupCompile.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3_MarkupCompile.lref
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\MainWindow.baml
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\Window2.baml
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.g.resources
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.AssemblyInfoInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.AssemblyInfo.cs
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.csproj.CoreCompileInputs.cache
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\ref\KTTX2_de_3.dll
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.pdb
+D:\OneDrive - www.microsoft365.me\Haui\Hoc_ki_5\Lap trinh .NET\De_kiem_tra\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.genruntimeconfig.cache
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.exe
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.deps.json
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.runtimeconfig.json
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.runtimeconfig.dev.json
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.dll
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\ref\KTTX2_de_3.dll
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\bin\Debug\net5.0-windows\KTTX2_de_3.pdb
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.csproj.AssemblyReference.cache
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\Window2.g.cs
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3_MarkupCompile.cache
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3_MarkupCompile.lref
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\Window2.baml
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.g.resources
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.AssemblyInfoInputs.cache
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.AssemblyInfo.cs
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.csproj.CoreCompileInputs.cache
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.dll
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\ref\KTTX2_de_3.dll
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.pdb
+C:\Users\anhca\Desktop\WPF\KTTX2_de_3\obj\Debug\net5.0-windows\KTTX2_de_3.genruntimeconfig.cache

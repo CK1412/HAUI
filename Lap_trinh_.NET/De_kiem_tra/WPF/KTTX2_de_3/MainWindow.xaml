@@ -1,0 +1,31 @@
+﻿<Window x:Class="KTTX2_de_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KTTX2_de_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800"
+        WindowStartupLocation="CenterScreen"
+        FontSize="16">
+    <Border BorderBrush="Yellow" BorderThickness="2" Margin="10">
+        <Grid Background="LightCyan" >
+            <Label Content="Quản lý nhân viên" Foreground="Blue" FontSize="30" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="368" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+            <Label Content="Họ tên nhân viên" HorizontalAlignment="Left" Margin="100,69,0,0" VerticalAlignment="Top" Width="162"/>
+            <Label Content="Loại nhân viên" HorizontalAlignment="Left" Margin="100,123,0,0" VerticalAlignment="Top" Width="162"/>
+            <Label Content="Ngày sinh" HorizontalAlignment="Left" Margin="100,177,0,0" VerticalAlignment="Top" Width="162"/>
+            <Label Content="Số tiền bán hàng" HorizontalAlignment="Left" Margin="100,231,0,0" VerticalAlignment="Top" Width="162"/>
+            <TextBox x:Name="textBoxHoTenNV" HorizontalAlignment="Left" Margin="297,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="36"/>
+            <ComboBox x:Name="comboBoxLoaiNV" HorizontalAlignment="Left" Margin="297,121,0,0" VerticalAlignment="Top" Width="200" Height="36"/>
+            <DatePicker x:Name="datePickerNgaySinh" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="297,175,0,0" VerticalAlignment="Top" Width="260" Height="36" RenderTransformOrigin="0.513,0.114"/>
+            <TextBox x:Name="textBoxSoTienBanHang" HorizontalAlignment="Left" Margin="297,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="36"/>
+
+            <ListBox x:Name="listBoxData" HorizontalAlignment="Center" Height="200" Margin="0,290,0,0" VerticalAlignment="Top" Width="600"/>
+            <Button x:Name="buttonNhap" Content="Nhập" HorizontalAlignment="Left" Margin="145,558,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="buttonNhap_Click"/>
+            <Button x:Name="buttonXoa" Content="Xoá" HorizontalAlignment="Center" Margin="0,558,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="buttonXoa_Click"/>
+            <Button x:Name="buttonWindow2" Content="Window 2" HorizontalAlignment="Left" Margin="514,558,0,0" VerticalAlignment="Top" Width="140" Height="40" Click="buttonWindow2_Click" RenderTransformOrigin="0.696,0.584"/>
+            <Label x:Name="labelErrorText" Foreground="Red" Content="" HorizontalAlignment="Center" Margin="0,508,0,0" VerticalAlignment="Top" Width="540" HorizontalContentAlignment="Center"/>
+
+        </Grid>
+    </Border>
+</Window>
