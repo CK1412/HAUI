@@ -1,0 +1,25 @@
+﻿<Window x:Class="Bai_thi_minh_hoa_KTHP.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai_thi_minh_hoa_KTHP"
+        mc:Ignorable="d"
+        Title="Thông tin bán hàng" Height="450" Width="800"
+        FontSize="16"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    
+    <Grid Margin="20">
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding MaSp}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSp}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tên loại sản phẩm" Binding="{Binding TenLoaiSp}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tổng số lượng sản phẩm đã bán" Binding="{Binding SLdaBan}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tổng số tiền bán sản phẩm" Binding="{Binding SoTienBan}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
