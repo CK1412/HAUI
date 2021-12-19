@@ -13,7 +13,7 @@
 |  10  | [BÀI 10](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_10) | [Phát triển ứng dụng giao diện đồ hoạ](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_10/Bài%2010.%20Đề%20cương%20bài%20giảng.pdf) | 
 |  11  | [BÀI 11](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_11) | [Truy vấn và xử lí dữ liệu với Entity Framework Core](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_11/Bai11-de-cuong-bai-hoc.pdf) | 
 |  12  | [BÀI 12](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/BAI_12) | Bài tập về Kết nối Database |
-# Đề kiểm tra minh họa (C#,WPF)
+# Đề kiểm tra (C#,WPF)
 
 |  STT |   Đề bài   |          Lời giải           |   Nội dung    |
 |:----:|------------|----------------------------|-------------|
@@ -27,3 +27,9 @@
 |  08  | [KTTX2 đề xxx](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/WPF/KTTX2_de_xxx.pdf) | [KTTX2 đề xxx](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/WPF/KTTX2_de_xxx/) | về WPF (dùng textbox, combobox, listbox, datepicker, truyền data giữa 2 window) |
 |  09  | [KTTX2 đề 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/WPF/Kiemtra2-de1.pdf) | Làm tương tự mấy đề trên |
 |  10  | [KTTX2 đề 2](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/WPF/KTTX2_de_2.pdf) | [KTTX2 đề 2](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/WPF/KTTX2_de_2/) | về WPF (sử dụng listbox, textbox, checkbox, radiobutton, combobox, style trigger, ObservableCollection) |
+
+# Đề thi (WPF)
+
+|  STT |   Đề bài   |          Lời giải           |   Nội dung    |
+|:----:|------------|----------------------------|-------------|
+|  01  | [Bai_thi_minh_hoa_KTHP](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/Bai_thi_minh_hoa_KTHP_Bài%20tập%20EF%20Core.pdf) | [Bai_thi_minh_hoa_KTHP](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/Bai_thi_minh_hoa_KTHP/) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
