@@ -1,0 +1,16 @@
+﻿<Window x:Class="KTTX2_de_2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KTTX2_de_2"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800"
+        FontSize="16"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Label x:Name="label" Content="KẾT QUẢ ĐĂNG KÝ" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Width="286" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="22"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Center" Height="234" Margin="0,77,0,0" VerticalAlignment="Top" Width="660"/>
+        <Button x:Name="buttonXoá" Content="Xoá" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Width="116" Height="44" Click="buttonXoá_Click"/>
+    </Grid>
+</Window>

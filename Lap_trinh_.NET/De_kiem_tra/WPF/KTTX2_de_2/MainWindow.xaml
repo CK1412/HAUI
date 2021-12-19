@@ -1,0 +1,41 @@
+﻿<Window x:Class="KTTX2_de_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KTTX2_de_2"
+        mc:Ignorable="d"
+        Title="Quản lý thảo thí" Height="600" Width="800"
+        FontSize="16"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Label Content="ĐĂNG KÝ THI CUỐI KÌ" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="236" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <GroupBox  Header="Lần thi" HorizontalAlignment="Left" Height="69" Margin="43,58,0,0" VerticalAlignment="Top" Width="316">
+            <Grid>
+                <RadioButton x:Name="radioButtonLan1" Content="Lần 1" HorizontalAlignment="Left" Margin="44,0,0,0" VerticalAlignment="Center"/>
+                <RadioButton x:Name="radioButtonLan2" Content="Lần 2" HorizontalAlignment="Left" Margin="152,0,0,0" VerticalAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="Mã sinh viên" HorizontalAlignment="Left" Margin="43,145,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Họ tên" HorizontalAlignment="Left" Margin="43,199,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Lớp" HorizontalAlignment="Left" Margin="43,251,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label Content="Khoá" HorizontalAlignment="Left" Margin="43,303,0,0" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="textBoxMaSV" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="169,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="36"/>
+        <TextBox x:Name="textBoxHoTen" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="169,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="36"/>
+        <ComboBox x:Name="comboBoxLop" HorizontalAlignment="Left" Margin="169,249,0,0" VerticalAlignment="Top" Width="190" Height="36"/>
+        <TextBox x:Name="textBoxKhoa" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="169,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="36"/>
+        <GroupBox Header="Danh mục học phần" HorizontalAlignment="Left" Height="279" Margin="414,58,0,0" VerticalAlignment="Top" Width="304">
+            <Grid>
+                <CheckBox x:Name="checkBoxCSDL" Content="Cơ sở dữ liệu" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" Width="186" Height="32"/>
+                <CheckBox x:Name="checkBoxKTLT" Content="Kỹ thuật lập trình" HorizontalAlignment="Center" Margin="0,71,0,0" VerticalAlignment="Top" Width="186" Height="32"/>
+                <CheckBox x:Name="checkBoxKTMT" Content="Kiến trúc máy tính" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Width="186" Height="32"/>
+                <CheckBox x:Name="checkBoxXSTK" Content="Xác suất thống kê" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="186" Height="32"/>
+                <CheckBox x:Name="checkBoxTACNTT" Content="Tiếng anh-CNTT" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Width="186" Height="32"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="buttonXoaChon" Content="Xoá chọn" HorizontalAlignment="Left" Margin="207,393,0,0" VerticalAlignment="Top" Width="152" Height="38" Click="buttonXoaChon_Click"/>
+        <Button x:Name="buttonThem" Content="Thêm" HorizontalAlignment="Left" Margin="414,393,0,0" VerticalAlignment="Top" Width="152" Height="38" Click="buttonThem_Click"/>
+        <Label x:Name="labelErrorMsg" Content="" Foreground="Red" HorizontalAlignment="Center" Margin="0,468,0,0" VerticalAlignment="Top" Width="680" Height="46" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
