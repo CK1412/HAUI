@@ -33,3 +33,26 @@
 |  STT |   Đề bài   |          Lời giải           |   Nội dung    |
 |:----:|------------|----------------------------|-------------|
 |  01  | [Bai_thi_minh_hoa_KTHP](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/Bai_thi_minh_hoa_KTHP_Bài%20tập%20EF%20Core.pdf) | [Bai_thi_minh_hoa_KTHP](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/Bai_thi_minh_hoa_KTHP/) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
+
+# Một vài thủ thuật, lưu ý
+1. **tabindex** tạo thứ tự trường khi ấn tab
+2. **IsReadOnly="True"** để chỉ đọc
+3. `<LineBreak/>` để ngắt dòng
+4. lấy thuộc tính của **selectedItem trong comboBox** bằng cách\
+      `Text="{Binding SelectedItem.<thuộc tính của object>, ElementName=<Tên comboBox>}`
+5. để **hiển thị ảnh từ folder** ta click chuột phải vào file ảnh > property > sửa giá trị của buildAction thành resource
+6. để **hiển thị cửa sổ giữa màn hình** khi chạy ta thêm vào class Main dòng lệnh\
+        `WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;`\
+    hoặc ngắn hơn ta ta làm như sau\
+        ```
+          <Window Title="MainWindow" Height="450" Width="800"  
+          WindowStartupLocation="CenterScreen">
+        ```
+7. khi muốn mặc định **fontsize** trong giao diện\
+        ` <Window FontSize="12"></Window>`
+8. **tạo model từ database** \
+`Scaffold-Dbcontext "Data Source=COOL-KID\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir models`
+9. **cập nhật model khi database thay đổi** \
+`Scaffold-Dbcontext "Data Source=COOL-KID\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir models -Force`
+10. gán **text trong combobox** thì phải khai `IsEditable="True"`
+11. **Tạo set, get nhanh** cho thuộc tính của class bằng cách bôi đen tên thuộc tính đó rồi nhấn tổ hợp ***Ctrl + R + E***
