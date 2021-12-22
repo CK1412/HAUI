@@ -48,7 +48,7 @@ SELECT * FROM HoaDonChiTiet
 ### 2. cập nhật model khi database thay đổi
   `Scaffold-Dbcontext "Data Source=COOL-KID\SQLEXPRESS;Initial Catalog=QLBanHang;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir models -Force`
   
-### Có thể tạo giao diện dạng lưới ở tệp MainWindow.xaml như sau
+## Có thể tạo giao diện dạng lưới ở tệp MainWindow.xaml như sau:
 ```
 <Grid Margin="10">
         <Grid.ColumnDefinitions>
