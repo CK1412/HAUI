@@ -36,10 +36,10 @@
             </DataGrid>
         </Grid>
         <WrapPanel HorizontalAlignment="Center" Margin="0,540,0,0" VerticalAlignment="Top">
-            <Button x:Name="buttonThem" Margin="10,0,10,0" Content="Thêm" Width="120" Height="36" Click="buttonThem_Click"/>
-            <Button x:Name="buttonSua" Margin="10,0,10,0" Content="Sửa" Width="120" Height="36" Click="buttonSua_Click"/>
-            <Button x:Name="buttonXoa" Margin="10,0,10,0" Content="Xoá" Width="120" Height="36" Click="buttonXoa_Click"/>
-            <Button x:Name="buttonTim" Margin="10,0,10,0" Content="Tìm" Width="120" Height="36" Click="buttonTim_Click"/>
+            <Button x:Name="buttonThem" Margin="10,0,10,0" Template="{StaticResource ButtonTemplate}" Content="Thêm" Foreground="White" Width="120" Height="36" Click="buttonThem_Click"/>
+            <Button x:Name="buttonSua" Margin="10,0,10,0" Template="{StaticResource ButtonTemplate}" Content="Sửa" Foreground="White" Width="120" Height="36" Click="buttonSua_Click"/>
+            <Button x:Name="buttonXoa" Margin="10,0,10,0" Template="{StaticResource ButtonTemplate}" Content="Xoá" Foreground="White" Width="120" Height="36" Click="buttonXoa_Click"/>
+            <Button x:Name="buttonTim" Margin="10,0,10,0" Template="{StaticResource ButtonTemplate}" Content="Tìm" Foreground="White" Width="120" Height="36" Click="buttonTim_Click"/>
         </WrapPanel>
         <Label x:Name="labelMaLoi" Foreground="Red" Content="" HorizontalAlignment="Center" Margin="0,599,0,0" VerticalAlignment="Top" Height="36" HorizontalContentAlignment="Center" Width="720"/>
 
