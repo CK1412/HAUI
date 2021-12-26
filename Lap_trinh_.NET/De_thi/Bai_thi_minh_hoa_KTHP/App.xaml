@@ -15,13 +15,21 @@
             </Style.Triggers>
         </Style>
         
-        <Style TargetType="Button">
+        <!--<Style TargetType="Button">
             <Style.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10"></Setter>
                 </Style>
             </Style.Resources>
-        </Style>
+            <Setter Property="Background" Value="Crimson"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+        </Style>-->
+        <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type Button}">
+            <Border CornerRadius="10" Background="Crimson">
+                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+            </Border>
+        </ControlTemplate>
         
         <Style x:Key="WrappedColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
             <Setter Property="ContentTemplate">
