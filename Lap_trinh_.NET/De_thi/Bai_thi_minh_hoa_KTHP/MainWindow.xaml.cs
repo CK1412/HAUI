@@ -125,7 +125,7 @@ namespace Bai_thi_minh_hoa_KTHP
             }
             else
             {
-                MessageBox.Show($"Không có sản phẩm mã {sp.MaSp}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Không có sản phẩm mã {textBoxMaSP.Text.Trim()}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 
