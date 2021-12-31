@@ -1,0 +1,49 @@
+﻿<Window x:Class="De_thi_mau_00.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De_thi_mau_00"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800"
+        FontSize="16"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <Label Content="SALES MANAGEMENT" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <Label Content="Product ID" HorizontalAlignment="Left" Margin="164,48,0,0" VerticalAlignment="Top" Width="150" Height="36"/>
+        <Label Content="Product Name" HorizontalAlignment="Left" Margin="164,97,0,0" VerticalAlignment="Top" Width="150" Height="36"/>
+        <Label Content="Unit Price" HorizontalAlignment="Left" Margin="164,147,0,0" VerticalAlignment="Top" Width="150" Height="36"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="164,196,0,0" VerticalAlignment="Top" Width="150" Height="36"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="164,248,0,0" VerticalAlignment="Top" Width="150" Height="36"/>
+
+        <TextBox x:Name="textBoxProductID" HorizontalAlignment="Left" Margin="342,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="36"/>
+        <TextBox x:Name="textBoxProductName" HorizontalAlignment="Left" Margin="342,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="36"/>
+        <TextBox x:Name="textBoxUnitPrice" HorizontalAlignment="Left" Margin="342,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="36"/>
+        <TextBox x:Name="textBoxQuantity" HorizontalAlignment="Left" Margin="342,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="36"/>
+        <ComboBox x:Name="comboBoxCategory" HorizontalAlignment="Left" Margin="342,248,0,0" VerticalAlignment="Top" Width="300" Height="36"/>
+
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Center" Height="221" Margin="0,300,0,0" VerticalAlignment="Top" Width="760"
+                  AutoGenerateColumns="False" 
+                  EnableRowVirtualization="False" 
+                  IsReadOnly="True"
+                  SelectedCellsChanged="dataGrid_SelectedCellsChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Product ID" Binding="{Binding ProductID}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Category ID" Binding="{Binding CategoryID}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, StringFormat={}{0:N0}}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity, StringFormat={}{0:N0}}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat=N0}"  HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" CellStyle="{StaticResource CellStyle}" Width=".2*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="buttonInsert" Content="Insert" Template="{StaticResource ButtonTemplate}" HorizontalAlignment="Left" Margin="164,547,0,0" VerticalAlignment="Top" Width="100" Height="36" Click="buttonInsert_Click"/>
+        <Button x:Name="buttonUpdate" Content="Update" Template="{StaticResource ButtonTemplate}" HorizontalAlignment="Left" Margin="289,547,0,0" VerticalAlignment="Top" Width="100" Height="36" Click="buttonUpdate_Click"/>
+        <Button x:Name="buttonDelete" Content="Delete" Template="{StaticResource ButtonTemplate}" HorizontalAlignment="Left" Margin="414,547,0,0" VerticalAlignment="Top" Width="100" Height="36" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonSearch" Content="Search" Template="{StaticResource ButtonTemplate}" HorizontalAlignment="Left" Margin="538,547,0,0" VerticalAlignment="Top" Width="100" Height="36" Click="buttonSearch_Click"/>
+
+        <Label x:Name="labelErrorMsg" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,603,0,0" VerticalAlignment="Top" Width="760" Height="36" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
