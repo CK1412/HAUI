@@ -17,8 +17,8 @@
 
 |  STT |   Đề bài   |          Lời giải           |   Nội dung    |
 |:----:|------------|----------------------------|-------------|
-|  01  | [Bài kiểm tra số 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Bai-kiem-tra-1.pdf) | [Bài kiểm tra số 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Bai_kiem_tra_so_1/) | về OOP (thêm, hiển thị danh sách, sắp xếp)|
-|  02  | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Đề-kiểm-tra-TX1.pdf) | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/De_kiem_tra_TX_1/) | về OOP (thêm, hiển thị danh sách, sắp xếp)|
+|  01  | [Bài kiểm tra số 1 (2 đề)](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Bai-kiem-tra-1.pdf) | [Bài kiểm tra số 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Bai_kiem_tra_so_1/) | về OOP (thêm, hiển thị danh sách, sắp xếp)|
+|  02  | [Đề kiểm tra TX 1 (2 đề)](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Đề-kiểm-tra-TX1.pdf) | [Đề kiểm tra TX 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/De_kiem_tra_TX_1/) | về OOP (thêm, hiển thị danh sách, sắp xếp)|
 |  03  | [Đề 01](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/de_01.pdf) | [Đề 01](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/de_01/) | về OOP (thêm, hiển thị danh sách, sắp xếp) |
 |  04  | [Đề 03](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/de_03.pdf) | [Đề 03](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/De_03/) | về OOP (thêm, sửa, hiển thị danh sách) |
 |  05  | [Đề kiểm tra 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/Kiemtra1.pdf) | [Đề kiểm tra 1](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_kiem_tra/OOP/KiemTra1/) | về OOP (thêm, xóa, hiển thị danh sách) |
