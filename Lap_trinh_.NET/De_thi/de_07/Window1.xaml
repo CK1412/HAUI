@@ -1,0 +1,21 @@
+﻿<Window x:Class="de_07.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:de_07"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800"
+        FontSize="16"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã Danh Mục" Binding="{Binding MaDanhMuc}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tên Danh mục" Binding="{Binding TenDanhMuc}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TongTien, StringFormat={}{0:N}}" HeaderStyle="{StaticResource WrappedColumnHeaderStyle}" Width=".2*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
