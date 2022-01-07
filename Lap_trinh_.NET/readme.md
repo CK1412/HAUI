@@ -34,8 +34,8 @@
 |:----:|------------|----------------------------|-------------|
 |  01  | [Bai_thi_minh_hoa_KTHP](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/Bai_thi_minh_hoa_KTHP_Bài%20tập%20EF%20Core.pdf) | [Bai_thi_minh_hoa_KTHP](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/Bai_thi_minh_hoa_KTHP/) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
 |  02  | [De_thi_mau_00](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_thi_mau_00.pdf) | [De_thi_mau_00](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/De_thi_mau_00) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
-|  03  | [de_07](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_07.pdf) | [de_07](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_07) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
-
+|  03  | [de_03](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_03.pdf) | [de_03](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_03) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
+|  04  | [de_07](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_07.pdf) | [de_07](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_.NET/De_thi/de_07) | về WPF (tạo giao diện Window, kết nối database, tạo model, thêm, sửa, xoá cập nhật với database, style/ template (style trigger), LINQ, DataGrid, ...)|
 # Một vài thủ thuật, lưu ý
 1. **tabindex** tạo thứ tự trường khi ấn tab
 2. **IsReadOnly="True"** để chỉ đọc
