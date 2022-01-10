@@ -97,7 +97,7 @@ namespace de_03
                 labelMaLoi.Content = "Các trường không được rỗng";
                 return false;
             }
-            if(Regex.IsMatch(luong,@"^\d$") || Regex.IsMatch(thuong, @"^\d$"))
+            if(!Regex.IsMatch(luong, @"^\d*[1-9]{1}\d*$") || !Regex.IsMatch(thuong, @"^\d*[1-9]{1}\d*$"))
             {
                 labelMaLoi.Content = "Lương và thưởng phải là số";
                 return false;
