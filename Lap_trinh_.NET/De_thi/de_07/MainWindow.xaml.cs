@@ -1,4 +1,4 @@
-﻿using de_07.model;
+using de_07.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +23,11 @@ namespace de_07
     public partial class MainWindow : Window
     {
         QLDuocPhamContext db = new();
-        List<DanhMucThuoc> danhMucThuocs = new();
         public MainWindow()
         {
             InitializeComponent();
         }
-        private void refreshData()
+        private void setData()
         {
             var query = from thuoc in db.Thuocs
                         where thuoc.SoLuong <= 200
@@ -43,16 +42,31 @@ namespace de_07
                             ThanhTien = thuoc.GiaBan * thuoc.SoLuong,
                         };
             dataGrid.ItemsSource = query.ToList();
-        }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            refreshData();
 
-            danhMucThuocs = (from cate in db.DanhMucThuocs
-                             select cate).ToList<DanhMucThuoc>();
+            List<DanhMucThuoc> danhMucThuocs = (from cate in db.DanhMucThuocs
+                                                select cate).ToList<DanhMucThuoc>();
             comboBoxDanhMucThuoc.ItemsSource = danhMucThuocs;
             comboBoxDanhMucThuoc.DisplayMemberPath = "TenDm";
             comboBoxDanhMucThuoc.SelectedValuePath = "MaDm";
+        }
+        private void refreshData()
+        {
+            var query = from thuoc in db.Thuocs
+                        select new
+                        {
+                            MaThuoc = thuoc.MaThuoc,
+                            TenThuoc = thuoc.TenThuoc,
+                            MaDanhMuc = thuoc.MaDm,
+                            GiaBan = thuoc.GiaBan,
+                            SoLuong = thuoc.SoLuong,
+                            ThanhTien = thuoc.GiaBan * thuoc.SoLuong,
+                        };
+            dataGrid.ItemsSource = query.ToList();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            setData();
 
             textBoxMaThuoc.Focus();
         }
@@ -65,7 +79,7 @@ namespace de_07
                 textBoxTenThuoc.Text = selectedItem.TenThuoc;
                 textBoxSoLuong.Text = selectedItem.SoLuong.ToString();
                 textBoxGiaBan.Text = selectedItem.GiaBan.ToString();
-                comboBoxDanhMucThuoc.SelectedIndex = danhMucThuocs.Select(e => e.MaDm).ToList().IndexOf(selectedItem.MaDanhMuc);
+                comboBoxDanhMucThuoc.SelectedValue = selectedItem.MaDanhMuc;
             }
         }
         private bool isCheckValidateInput()
@@ -107,7 +121,7 @@ namespace de_07
                     newThuoc.TenThuoc = textBoxTenThuoc.Text.Trim();
                     newThuoc.SoLuong = Convert.ToInt32(textBoxSoLuong.Text);
                     newThuoc.GiaBan = Convert.ToDouble(textBoxGiaBan.Text);
-                    newThuoc.MaDm = (comboBoxDanhMucThuoc.SelectedItem as DanhMucThuoc).MaDm;
+                    newThuoc.MaDm = comboBoxDanhMucThuoc.SelectedValue.ToString();
 
                     db.Thuocs.Add(newThuoc);
                     db.SaveChanges();
@@ -154,7 +168,7 @@ namespace de_07
                     query.TenThuoc = textBoxTenThuoc.Text.Trim();
                     query.SoLuong = Convert.ToInt32(textBoxSoLuong.Text);
                     query.GiaBan = Convert.ToDouble(textBoxGiaBan.Text);
-                    query.MaDm = (comboBoxDanhMucThuoc.SelectedItem as DanhMucThuoc).MaDm;
+                    query.MaDm = comboBoxDanhMucThuoc.SelectedValue.ToString();
 
                     db.SaveChanges();
                     refreshData();
