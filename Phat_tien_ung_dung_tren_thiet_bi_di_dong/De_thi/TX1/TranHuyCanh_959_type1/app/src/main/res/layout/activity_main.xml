@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Chương trình tính tiền bán sách Online"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin hoá đơn"
+        android:background="@color/yellow"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+       <TableRow>
+           <TextView android:text="Tên khách hàng"></TextView>
+           <EditText android:id="@+id/nameEditText"></EditText>
+       </TableRow>
+        <TableRow>
+            <TextView android:text="Số lượng sách"></TextView>
+            <EditText android:id="@+id/quantityEditText"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView></TextView>
+            <CheckBox
+                android:id="@+id/isVIPCheckBox"
+                android:text="Khách hàng là VIP"></CheckBox>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Thành tiền"></TextView>
+            <TextView
+                android:id="@+id/moneyTotalTextView"
+                android:textColor="@color/green"
+                android:background="@color/gray"
+                android:padding="10dp"
+                android:gravity="center"></TextView>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/moneyCalcBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tính tiền"
+            android:layout_marginRight="16dp"></Button>
+        <Button
+            android:id="@+id/moneyInputBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập tiền"></Button>
+        <Button
+            android:id="@+id/reportBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê"
+            android:layout_marginLeft="16dp"></Button>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/customerListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

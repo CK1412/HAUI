@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập phương trình bậc 2"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        ></TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <EditText
+                android:id="@+id/aNumberEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                ></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x^2"
+                android:textSize="20dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20dp"></TextView>
+            <EditText
+                android:id="@+id/bNumberEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                ></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textSize="20dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20dp"></TextView>
+            <EditText
+                android:id="@+id/cNumberEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                ></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = 0 "
+                android:textSize="20dp"></TextView>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:text="Kết quả: "
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/purple_200"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/calcBtn"
+                android:text="Giải PT"></Button>
+            <Button
+                android:id="@+id/deleteBtn"
+                android:text="Xoá"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"></Button>
+            <Button
+                android:id="@+id/saveBtn"
+                android:text="Lưu"></Button>
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/infoListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        ></ListView>
+</LinearLayout>
