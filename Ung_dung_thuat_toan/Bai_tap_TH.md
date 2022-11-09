@@ -52,7 +52,7 @@
 
 </details>
   
-**Bài tập 2:** Cài đặt chương trình sinh các chuỗi ký tự độ dài n chỉ chứa 2 ký tự ‘a’ và ký tự ‘b’.
+**Bài tập 2:** Cài đặt chương trình sinh các chuỗi ký tự độ dài n chỉ chứa 2 ký tự 'a' và ký tự 'b'.
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
@@ -102,3 +102,113 @@
   ![image](https://user-images.githubusercontent.com/65481655/200874758-e3d29c4c-bbeb-49ea-ac44-973505bfa392.png)
 
 </details>  
+
+**Bài tập 3:** Cài đặt chương trình sinh các tập con k phần tử của tập S = {1, 2, …, n}..
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  
+  **Phân tích:**
+  
+  - Các phần tử khác nhau, không tính vị trí (xếp theo thứ tự từ điển)
+  - VD: 
+    - Input: n = 3, k = 2 
+    - Output:	{1,2}, {1,3}, {2,3} 
+  
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+  
+  int n, k;
+  int x[100];
+
+  void show() {
+    for(int i = 1; i <= k; i++) 
+      cout << x[i] << " ";
+    cout << endl;
+  }
+
+  void action(int p) {
+    for(int i = x[p-1]+1; i <= n-k+p; i++) {
+      x[p] = i;
+
+      if(p == k) 
+        show();
+      else 
+        action(p+1);
+    }
+  } 
+
+  int main() {
+    cout << "n = "; cin >> n;
+    cout << "k = "; cin >> k;
+
+    action(1);
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200876028-1c49cbbd-f2cf-418d-b80e-fe3e89105f8a.png)
+
+</details>  
+
+**Bài tập 4:** Cài đặt chương trình liệt kê các cách lấy 4 sinh viên từ 6 sinh viên gồm: Trang, Cong, Trung, Binh, Hoan, Mai.
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  
+  **Phân tích:**
+    
+  - Sử dụng tổ hợp (không có thứ tự) 
+  - Số cách = nCk = n! / (k! * (n-k)!) = 15 cách
+  
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+  
+  string studentList[] = {"Trang", "Cong", "Trung", "Binh", "Hoan", "Mai"};
+  int n = 6;
+
+  int k = 4;
+  int x[100];
+
+  void show() {
+    for(int i = 1; i <= k; i++) {
+      cout << studentList[x[i]-1] << "\t";
+    }
+    cout << endl;
+  }
+
+  void action(int p) {
+    for(int i = x[p-1]+1; i <= n-k+p; i++) {
+      x[p] = i;
+
+      if(p == k)
+        show();
+      else 
+        action(p+1);
+    }
+  }
+
+  int main() {
+    cout << "Cac cach lay 4 sv tu 6 sv:" << endl;
+
+    action(1);
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200877168-b1a6990c-17d8-4cc7-bd9e-ed1084971094.png)
+
+</details>  
+  
