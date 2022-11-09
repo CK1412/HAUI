@@ -1,9 +1,4 @@
-# Mục lục
-
-1. [BÀI THỰC HÀNH SỐ 1: GIẢI THUẬT ĐỆ QUY](#giai_thuat_de_quy)
-2. BÀI THỰC HÀNH SỐ 2: GIẢI THUẬT QUAY LUI
-
-## BÀI THỰC HÀNH SỐ 1: GIẢI THUẬT ĐỆ QUY <a name="giai_thuat_de_quy"></a>
+# BÀI THỰC HÀNH SỐ 1: GIẢI THUẬT ĐỆ QUY
 
 **Bài tập 1:** Cài đặt chương trình sinh các chuỗi nhị phân độ dài n.
 
@@ -333,4 +328,58 @@
   
   ![image](https://user-images.githubusercontent.com/65481655/200879495-53c8e659-c1de-4547-b059-8344df8edbd8.png)
 
+</details>  
+
+**Bài tập 7:** Cài đặt chương trình tìm số Fibonaci thứ n bằng đệ quy có nhớ
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+ 
+  **Phân tích:**
+ 
+  - Dãy Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, ...
+  - Đệ quy có nhớ: Các giá trị được sử dụng nhiều lần ta không tính lại mà sử dụng mảng để lưu trữ.
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+  
+  int temp[100] = {};
+
+  long fibonacci(int n) {
+    if(n == 1 || n == 2)
+      return 1;
+
+    if(temp[n] != 0)
+      return temp[n];
+    else 
+      return temp[n] = fibonacci(n-1) + fibonacci(n-2);
+  } 
+
+  int main() {
+    int n;
+    cout << "n = "; cin >> n;
+
+    cout << "So fibonacci thu n: " << fibonacci(n) << endl;
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200880476-0d4785a4-c67a-4c1f-8de0-5076ca774f6c.png)
+
+</details>  
+  
+**Bài tập 8:** (Thuật toán loang) Khởi tạo lưới (mảng 2 chiều) kích thước 12 x 12 gồm các số ngẫu nhiên trong đoạn [0, 5], hiển thị lưới. 
+  Đếm số miền liên thông chứa các ô có giá trị 5 trong lưới.
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  
+  Không hiểu, không làm 😁
+  
 </details>  
