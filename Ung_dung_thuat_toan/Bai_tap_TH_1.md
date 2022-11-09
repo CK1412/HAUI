@@ -4,6 +4,7 @@
 
 <details>
   <summary><i>Xem chi tiết</i></summary>
+  <br>
   
   **Code:**
 
@@ -51,6 +52,7 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
+  <br>
   
   **Code:**
 
@@ -102,6 +104,7 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
+  <br>
   
   **Phân tích:**
   
@@ -156,6 +159,7 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
+  <br>
   
   **Phân tích:**
     
@@ -211,7 +215,8 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
- 
+  <br>
+  
   **Phân tích:**
  
   - Chỉnh hợp (có thứ tự)
@@ -269,7 +274,8 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
- 
+  <br>
+  
   **Phân tích:**
  
   - Chỉnh hợp (có thứ tự)
@@ -334,7 +340,8 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
- 
+  <br>
+  
   **Phân tích:**
  
   - Dãy Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, ...
@@ -379,7 +386,94 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
+  <br>
   
   Không hiểu, không làm 😁
   
 </details>  
+
+**Bài tập 9:** Cài đặt chương trình tính tổng các chữ số của số nguyên dương n bằng đệ quy.
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary> 
+  <br>
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  int sumOfDigits(int n) {
+    if(n < 10) 
+      return n;
+
+    return n % 10 + sumOfDigits(n/10);
+  }
+
+  int main() {
+    int n;
+
+    cout << "Nhap so nguyen duong n: "; cin >> n;
+
+    cout << "Tong cac chu so cua n: " << sumOfDigits(n) << endl;
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200882460-5d564536-7bdf-49ca-88a9-48216692466a.png)
+
+</details>  
+  
+**Bài tập 10:** Cài đặt chương trình tính tổng các số lẻ trong một dãy n số nguyên bằng đệ quy.
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+  
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  long sumOfOddNumbers(int *x, int n) {	
+    if(n == 0) {
+      if(x[n] % 2 == 0)
+        return 0;
+      else
+        return x[n];
+    }
+
+    if(x[n] % 2 == 0)
+      return sumOfOddNumbers(x, n-1);
+    else 	
+      return x[n] + sumOfOddNumbers(x, n-1);
+  }
+
+  int main() {
+    int n;
+    cout << "n = "; cin >> n;
+
+    int *x = new int[n];
+    cout << "Nhap mang n phan tu:\n";
+    for(int i = 0; i < n; i++) {
+      cout << "x[" << i << "] = ";
+      cin >> x[i];
+    }
+
+    cout << "Tong cac so le trong day: " << sumOfOddNumbers(x, n-1) << endl;
+  
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200882862-94d2085b-1700-41ba-b2ad-c1270e59630e.png)
+
+</details>  
+  
