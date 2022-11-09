@@ -212,3 +212,125 @@
 
 </details>  
   
+**Bài tập 5:** Cài đặt chương trình sinh các hoán vị của tập S = {1, 2, …, n}.
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+ 
+  **Phân tích:**
+ 
+  - Chỉnh hợp (có thứ tự)
+ 
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  int n;
+  bool check[100] = {false};
+  int x[100];
+
+  void show() {
+    for(int i = 1; i <= n; i++) 
+      cout << x[i] << " ";
+    cout << endl;
+  }
+
+  void action(int k) {
+    for(int i = 1; i <= n; i++) {
+      if(!check[i]) {
+        x[k] = i;
+        check[i] = true;
+
+        if(k == n) 
+          show();
+        else
+          action(k+1);
+
+        check[i] = false;
+      }
+    }
+  }
+
+  int main() {
+    cout << "n = "; cin >> n;
+    
+    cout << "\nSinh cac hoan vi:\n";
+    action(1);
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200878711-7c6ac108-62aa-4051-8d45-76dcdf02cd5e.png)
+
+</details> 
+  
+**Bài tập 6:** Cài đặt chương trình liệt kê tất cả các cách xếp 6 sinh viên gồm: Trang, Cong, Trung, Binh, Hoan, Mai 
+  vào 6 chiếc ghế được đánh số thứ tự 1, 2, …, 6.
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+ 
+  **Phân tích:**
+ 
+  - Chỉnh hợp (có thứ tự)
+  - Số cách = n! = 6! = 720 hoặc	= nAn = 6! / 0! = 720
+  
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  int count = 0;
+  string studentList[] = {"Trang", "Cong", "Trung", "Binh", "Hoan", "Mai"};
+  int n = 6;
+  int x[100];
+  bool check[100] = {false};
+
+  void show() {
+    for(int i = 1; i <= n; i++) {
+      cout << studentList[x[i]-1] << "\t";
+    }
+    cout << endl;
+    count++;
+  }
+
+  void action(int k) {
+    for(int i = 1; i <= n; i++) {
+      if(!check[i]) {
+        x[k] = i;
+        check[i] = true;
+
+        if(k == n)
+          show();
+        else 
+          action(k+1);
+
+        check[i] = false;
+      }
+    }
+  }
+
+  int main() {
+    cout << "Cac cach xep 6 sinh vien" << endl;
+
+    action(1);
+
+    cout << "\nTong so cach: " << count << endl;
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ... Kết quả rất dài (Chỉ chụp lại phần cuối)
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200879495-53c8e659-c1de-4547-b059-8344df8edbd8.png)
+
+</details>  
