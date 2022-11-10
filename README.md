@@ -10,4 +10,4 @@ Tài liệu học ở trường mà tôi đã học, đã làm và sưu tầm đ
 |  03  | [Lập trình Java](https://github.com/CK1412/HAUI/tree/main/Lap_trinh_Java/) | Ngôn ngữ Java và Swing Framework |
 |  04  | [Thiết kế Web](https://github.com/CK1412/HAUI/tree/main/Thiet_ke_Web/) | Xây dựng UI với Html, Css, Javascript |
 |  05  | [Phát triển ứng dụng trên thiết bị di động](https://github.com/CK1412/HAUI/tree/main/Phat_tien_ung_dung_tren_thiet_bi_di_dong/) | Sử dụng ngôn ngữ Java phát triển ứng dụng Android |
-|  06  | [Ứng dụng thuật toán](https://github.com/CK1412/HAUI/tree/main/Ung_dung_thuat_toan/) | Các thuật toán đệ quy, quai lui, chiến lược tham lam, chia để trị, ... |
+|  06  | [Ứng dụng thuật toán](https://github.com/CK1412/HAUI/tree/main/Ung_dung_thuat_toan/) | Các thuật toán đệ quy, quay lui, chiến lược tham lam, chia để trị, ... |
