@@ -10,29 +10,29 @@
   <br>
 
   **Phân tích:**
- 
-	- Sử dụng giải thuật Euclid
+  
+  - Sử dụng giải thuật Euclid
 
   **Code:**
 
   ```c++
   #include<iostream>
-	using namespace std;
-	
-	int UCLN(int a, int b) {	
-		if(b == 0)
-			return a;
+  using namespace std;
 
-		return UCLN(b, a%b); 
-	}
+  int UCLN(int a, int b) {	
+    if(b == 0)
+      return a;
 
-	int main() {
-		int a, b;
-		cout << "a = "; cin >> a;
-		cout << "b = "; cin >> b;
+    return UCLN(b, a%b); 
+  }
 
-		cout << "UCLN(a, b) = " << UCLN(a, b) << endl;
-	}
+  int main() {
+    int a, b;
+    cout << "a = "; cin >> a;
+    cout << "b = "; cin >> b;
+
+    cout << "UCLN(a, b) = " << UCLN(a, b) << endl;
+  }
   ```
 
   **Kết quả chạy:**
@@ -231,5 +231,110 @@
   <br>
 
   Khó😁
+
+</details>  
+  
+**Bài tập 7:** Cài đặt bài toán sinh dãy nhị phân theo phương pháp quay lui
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  int n;
+  int x[100];
+
+  void show() {
+    for(int i = 0; i < n; i++)
+      cout << x[i];
+    cout << endl;
+  }
+
+  void action(int k) {
+    for(int i = 0; i <= 1; i++) {
+      x[k] = i;
+
+      if(k == n-1) 
+        show();
+      else
+        action(k+1);
+    }	
+  }
+
+  int main() {
+    cout << "Nhap n = "; cin >> n;
+
+    action(0);
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200983731-fc74a411-421d-4747-b07f-e50171dda233.png)
+
+</details>  
+  
+**Bài tập 8:** Cài đặt bài toán liệt kê hoán vị theo phương pháp quay lui
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Phân tích:**
+ 
+  - Chỉnh hợp (có thứ tự)
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  int n;
+  bool check[100] = {false};
+  int x[100];
+
+  void show() {
+    for(int i = 1; i <= n; i++) 
+      cout << x[i] << " ";
+    cout << endl;
+  }
+
+  void action(int k) {
+    for(int i = 1; i <= n; i++) {
+      if(!check[i]) {
+        x[k] = i;
+        check[i] = true;
+
+        if(k == n) 
+          show();
+        else
+          action(k+1);
+
+        check[i] = false;
+      }
+    }
+  }
+
+  int main() {
+    cout << "n = "; cin >> n;
+
+    cout << "\nSinh cac hoan vi:\n";
+    action(1);
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200984199-0cbcbb01-8fb0-40a3-bca8-f47a14e4860f.png)
 
 </details>  
