@@ -7,7 +7,7 @@
   
 <details>
   <summary><i>Xem chi tiết</i></summary>
- <br>
+  <br>
 
   **Phân tích:**
  
@@ -80,5 +80,95 @@
   **Kết quả chạy:**
   
   ![image](https://user-images.githubusercontent.com/65481655/200982023-fbf4dfa8-30db-425b-b6df-7bab792a2edf.png)
+
+</details>  
+	
+**Bài tập 3:** Cài đặt bài toán tìm số fibonaci theo thuật toán đệ quy
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Phân tích:**
+  
+  - Dãy fibonacci: 1 1 2 3 5 8 13 ...
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  long fibonacci(int n) {
+    if(n == 1 || n == 2)
+      return 1;
+
+    return fibonacci(n-1) + fibonacci(n-2);
+  }
+
+  int main() {
+    int n;
+    cout << "n = "; cin >> n;
+
+    cout << "So fibonacci thu n: " << fibonacci(n) << endl;
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200982321-9d846c30-0457-4e47-9146-b7edf58ffafd.png)
+
+</details>  
+  
+**Bài tập 4:** Cài đặt bài toán tìm số fibonaci theo thuật toán lặp (khử đệ quy)
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Phân tích:**
+ 
+  - Dãy fibonacci: 1 1 2 3 5 8 13 ...
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  long fibonacci(int n) {
+    if(n == 1 || n == 2)
+      return 1;
+
+    int f1 = 1, f2 = 1;
+    int f;	
+
+    int i = 3;
+
+    while(i <= n) {
+      f = f1 + f2;
+      f1 = f2;
+      f2 = f;
+      i++;
+    }
+
+    return f;
+  }
+
+  int main() {
+    int n;
+    cout << "n = "; cin >> n;
+
+    cout << "So fibonacci thu n: " << fibonacci(n) << endl;
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200982575-ddff7ecb-d7db-4eb8-8d34-a7cc08228704.png)
 
 </details>  
