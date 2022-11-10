@@ -338,3 +338,170 @@
   ![image](https://user-images.githubusercontent.com/65481655/200984199-0cbcbb01-8fb0-40a3-bca8-f47a14e4860f.png)
 
 </details>  
+	
+**Bài tập 9:** Cài đặt bài toán mã đi tuần theo phương pháp quay lui
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Phân tích:**
+ 
+  - Minh hoạ:
+  
+  ![200px-Knights-Tour-Animation](https://user-images.githubusercontent.com/65481655/200987414-f83a09f4-d9cc-4b39-b32a-c660ef0f5513.gif)
+
+  **Code:**
+
+  ```c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  int n;
+
+  // buoc di cua quan ma
+  int dem = 0;
+
+  // mang danh dau thu tu di chuyen tuong ung voi moi o
+  int **a;
+
+  // co 8 cach di chuyen cua quan ma theo toa do Oxy
+  int X[8] = {-2,-2,-1,-1, 1, 1, 2, 2}; 
+  int Y[8] = {-1, 1,-2, 2,-2, 2,-1, 1};
+
+
+  void xuat() {
+    for(int i = 0; i < n; i++) {
+      for(int j = 0; j < n; j++) {
+        cout << a[i][j] << "\t";
+      }
+      cout << endl << endl;
+    }
+  }
+  void dichuyen(int x, int y) {
+    dem++;
+    a[x][y] = dem;
+
+    // xet lan luot 8 cach di chuyen
+    for(int i = 0; i < 8; i++) {
+      if(dem == n*n) {
+        cout << "\nThu tu di chuyen tren ban co nhu sau:\n\n";
+        xuat();
+        exit(0);
+      }
+      int u = x + X[i];
+      int v = y + Y[i];
+      if(u >= 0 && u < n && v >= 0 && v < n && a[u][v] == 0) {
+        dichuyen(u, v);
+      }
+    }
+    // neu k cach nao t/m thi tra v gia tri ban dau
+    dem--;
+    a[x][y] = 0;
+  }
+  int main()
+  {
+    cout << "nhap n: "; 
+    cin >> n;
+    cout << "Ban co co kich thuoc " << n << " x " << n << endl;
+
+    a = new int*[n];
+    for(int i = 0; i < n; i++) {
+      a[i] = new int[n]();  // khoi tao cac phan tu co gia tri la 0
+    }
+    int a, b;
+    cout << "Nhap toa do xuat phat:\n";
+    cout << " x = "; cin >> a;
+    cout << " y = "; cin >> b;
+    dichuyen(a, b);
+
+    cout << "\nKhong co duong di.\n";
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  | Không có đường đi  | Có đường đi    |
+  | :---: | :---: |
+  | ![image](https://user-images.githubusercontent.com/65481655/200986687-61e89346-d4f5-4ad7-8418-c0d50aa426e9.png)   | <img width="500px" src="https://user-images.githubusercontent.com/65481655/200986782-7cff720b-e9da-475b-b431-7063eb073ef6.png"/>  |
+
+</details> 
+
+**Bài tập 10:** Cài đặt bài toán tám hậu theo phương pháp quay lui
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Phân tích:**
+ 
+  - Kiểm tra điều kiện các con hậu tấn công nhau
+  
+  - A(xA, yA) va B(xB, yB)
+  - Xét điều kiện chung hàng
+    - Có yA = yB -> tấn công nhau
+  - Xét điều kiện chung đường chéo.
+    - Có |xA-xB| = |yA - yB| -> tấn công nhau
+
+  **Code:**
+
+  ```c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  // mang luu vi tri row tuong tung voi column
+  int row[8] = {0}; 
+
+  bool kt_dk(int c, int r) {
+    for(int column = 0;  column < c; column++) {
+      if(row[column] == r || abs(row[column] - r) == abs(column - c)) 
+        return false;
+    }
+    return true;
+  }
+
+  void showRow() {
+    cout << "row   : ";
+    for(int column = 0; column < 8; column++) {
+      cout << row[column] + 1 << " "; 
+    }
+    cout << endl;
+  } 
+
+  // sap xep 8 quan hau 
+  void quay_lui(int c) {
+    if(c == 8) {
+      showRow();
+    }
+    else {
+      // kiem tra tung hang
+      for(int r = 0; r < 8; r++) {
+        if(kt_dk(c, r)) {
+          row[c] = r;
+          quay_lui(c+1);
+        }
+      }
+    }
+  }
+  int main()
+  {
+    cout << "Ban co vua 8 x 8. Co 8 quan hau.\n";
+    cout << "Sap xep 8 con hau de chung khong tan cong nhau nhu sau:\n";
+    cout << "\ncolumn: 1 2 3 4 5 6 7 8\n\n";
+
+    // bat dau chon tai column 1
+    quay_lui(0); 
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+            
+  | Kết quả | Giải thích |
+  | :---: | :---: |
+  | ![image](https://user-images.githubusercontent.com/65481655/200989102-03c9738f-6561-4ec1-a9a4-4ee8da7dcedd.png) | Mỗi row tương ứng với column là 1 cách sắp xếp. <br> Ví dụ với row đầu tiên ta có các vị trí đặt 8 con hậu: (1, 1), (5, 2), (8, 3), (6, 4), (3, 5), (7, 6), (2, 7), (4, 8).  <br><br> ![8_hau_ket_qua](https://user-images.githubusercontent.com/65481655/200989745-2b1e614d-332c-496e-bc5b-d9a08cb47695.jpg) |
+  
+
+</details>  
