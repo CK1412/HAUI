@@ -43,7 +43,6 @@
   
 **Bài tập 2:** Cài đặt bài toán tìm ước số chung lớn nhất theo thuật toán lặp (khử đệ quy)
 
-  
 <details>
   <summary><i>Xem chi tiết</i></summary>
  <br>
@@ -170,5 +169,67 @@
   **Kết quả chạy:**
   
   ![image](https://user-images.githubusercontent.com/65481655/200982575-ddff7ecb-d7db-4eb8-8d34-a7cc08228704.png)
+
+</details>  
+  
+**Bài tập 5:** Cài đặt bài toán tháp Hà Nội theo thuật toán đệ quy
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  **Phân tích:**
+ 
+  - Quy ước:
+	  - Có 3 cột: A, B, C
+	  - Số đĩa: n > 1
+	  - Mỗi lần di chuyển 1 đĩa
+  - Mục tiêu: 
+	  - Di chuyển n đĩa từ tháp A sang C
+  - Minh hoạ:
+  
+  ![tower_of_hanoi](https://user-images.githubusercontent.com/65481655/200983102-e2f9913f-ae63-4cd1-92af-ae6eff6d4be7.gif)
+
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  void TowerHN(int n, char a, char b, char c) {
+    if(n == 1) {
+      cout << "\t" << a << "------->" << c << endl;
+      return;
+    }
+
+    TowerHN(n-1, a, c, b);
+    TowerHN(1, a, b, c);
+    TowerHN(n-1, b, a, c);
+  }
+
+  int main() {
+    int n;
+    cout << "Nhap so dia: "; cin >> n;
+
+    cout << "Cac buoc di chuyen dia tu cot A sang C" << endl;
+    TowerHN(n, 'A', 'B', 'C');
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/200983201-330ac4ff-60ea-4d76-b568-ece4f3cd0c91.png)
+
+</details>  
+  
+**Bài tập 6:** Cài đặt bài toán tháp Hà Nội theo thuật toán khử đệ quy
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+
+  Khó😁
 
 </details>  
