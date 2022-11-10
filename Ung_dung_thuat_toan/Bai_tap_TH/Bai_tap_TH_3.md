@@ -255,7 +255,7 @@
 </details> 
   
 **Bài tập 4:** Công ty vận tải A có n chiếc xe tải với các xe có tải trọng khác nhau, 
-  xe tải Ti có tải trọng là Ki chở được Ki tấn. Công ty A cần vận chuyển m tấn hàng.
+  xe tải *Ti* có tải trọng là *Ki* chở được *Ki* tấn. Công ty A cần vận chuyển m tấn hàng.
   Hỏi công ty cần sử dụng bao nhiêu chiếc xe tải và gồm những chiếc xe nào? Cho biết tải trọng của xe được chọn sử dụng sao cho số xe tải cần sử dụng là ít nhất?
   
 <details>
@@ -361,4 +361,41 @@
   
   <img width="500px" src="https://user-images.githubusercontent.com/65481655/201110649-9c3a628e-286f-45b6-ab96-af44116670ec.png" />
 
+</details> 
+	
+**Bài tập 5:** John có một chiếc xe tải với kích thước thùng xe là k (m3). 
+  Công ty B có n kiện hàng khác nhau, kiện hàng ki có khối lượng mi (kg) và kích thước ki (m3). 
+  Công ty B thuê John chở một số kiện hàng trong số n kiện hàng. 
+  Hãy cho biết John xếp được bao nhiêu kiện hàng lên thùng xe, gồm những kiện hàng nào, sao cho tổng khối lượng xếp lên xe đạt được là lớn nhất?
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+	
+  Lười, không làm😪😴🥱
+	
+</details> 
+  
+**Bài tập 6:** Một kho hàng gồm n gói hàng được ghi số thứ tự từ 1 đến n, gói hàng thứ i có kích thước si và khối lượng mi (1 ≤ i ≤ n). 
+  Ban đêm một cô chộm lẻn vào kho để lấy trộm hàng, cô chộm mang theo một chiếc ba lô có kích thước k. 
+  Vì nữ nhi sức yếu nên cô chộm chỉ chọn những gói hàng nhẹ nhàng.<br>
+  
+  *Yêu cầu:* Hãy chọn cho cô chộm những gói hàng ưng ý: tổng khối lượng các gói hàng được chọn là nhỏ nhất và tổng kích thước không vượt quá kích thước của ba lô
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+	
+  Lười, không làm😪😴🥱
+	
+</details> 
+  
+**Bài tập 7:**  Cài đặt chương trình giải quyết bài toán tìm đường đi ngắn nhất trên đồ thị vô hướng có trọng số (bài toán người du lịch – Travelling Sale Man)
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+	
+  Lười, không làm😪😴🥱
+	
 </details> 
