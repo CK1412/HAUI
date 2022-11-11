@@ -18,7 +18,7 @@ Cho danh sách n hàng hoá, thông tin hàng hoá gồm: mã hàng, giá bán.
 
   **Phân tích:**
   
-  
+  - Ta không cần thiết tạo ngẫu nhiên danh sách mà có thể khởi tạo mặc định
 
   **Code:**
 
@@ -212,7 +212,8 @@ Cho n công việc c, mỗi công việc gồm mã công việc, thời gian b�
 
   **Phân tích:**
   
-  - Còn ý 2.1 chưa làm được cho chưa hiểu yêu cầu.
+  - Ta không cần thiết tạo ngẫu nhiên danh sách mà có thể khởi tạo mặc định.
+  - Còn ý 2.1 chưa làm được do chưa hiểu yêu cầu.
 
   **Code:**
 
