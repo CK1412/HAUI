@@ -213,7 +213,10 @@ Cho n công việc c, mỗi công việc gồm mã công việc, thời gian b�
   **Phân tích:**
   
   - Ta không cần thiết tạo ngẫu nhiên danh sách mà có thể khởi tạo mặc định.
-  - Còn ý 2.1 chưa làm được do chưa hiểu yêu cầu.
+  - Ý 2.1:
+    - Để thực hiện số công việc nhiều nhất, ta sắp xếp các công việc theo chiều tăng dần của thời gian kết thúc.
+    - Duyệt các công việc, nếu thời gian bắt đầu công việc này lớn hơn hoặc bằng thời gian kết thúc công việc trước đó thì công việc đó được thực hiện.
+    ==> Cách làm giống bài toán lập lịch (BT TH 3)
 
   **Code:**
 
