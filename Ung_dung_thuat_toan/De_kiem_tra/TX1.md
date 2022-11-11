@@ -212,16 +212,140 @@ Cho n công việc c, mỗi công việc gồm mã công việc, thời gian b�
 
   **Phân tích:**
   
-  
+  - Còn ý 2.1 chưa làm được cho chưa hiểu yêu cầu.
 
   **Code:**
 
   ```c++
-  
+  #include<bits/stdc++.h>
+  #include<Windows.h>
+  using namespace std;
+
+  #define maxN 10
+  #define minN 6
+
+  class Job {
+    public:
+      int maCV;
+      int startTime;
+      int finishTime;
+
+      Job() {	
+        this->maCV = 0,
+        this->startTime = 0;
+        this->finishTime = 0; 
+      }
+
+      void input(int maCV, int startTime, int finishTime) {
+        this->maCV = maCV,
+        this->startTime = startTime;
+        this->finishTime = finishTime; 
+      }
+
+      void show() {
+        cout << "\t" << setw(10) << left << this->maCV 
+          << setw(15) << left << this->startTime
+          << setw(10) << left << this->finishTime << endl;
+      }
+  };
+
+  int n;
+  Job *jobList;
+
+  // Tu dong tao danh sach cong viec
+  void autoCreateJobList();
+
+  void showTitle();
+
+  // Tinh tong thoi gian thuc hien tat ca cong viec trong ds
+  int sumExecTime(int k);
+
+  // Cac cach lay ra 5 cong viec tu ds
+  int k = 5;
+  int x[100]; // luu tru ma cv
+  int countWays = 0;
+
+  void showMaCV();
+
+  void getFiveJobs(int p);
+
+  int main() {
+    autoCreateJobList();
+
+    cout << "\nTong thoi gian thuc hien tat ca cong viec la: " << sumExecTime(0) << endl;
+
+    Sleep(500);
+
+    cout << "\nCac phuong an lay ra 5 cong viec tu ds c (hien thi ma cong viec):\n";
+    getFiveJobs(1);
+    cout << "\n===> Tong: " << countWays << " cach.\n";
+
+    return 0;
+  }
+
+  void autoCreateJobList() {
+    srand(time(0)); 
+    n = minN + rand() % (maxN - minN + 1);
+
+    jobList = new Job[n];
+
+    showTitle();
+
+    for(int i = 0; i < n; i++) {
+      int random = rand();
+
+      int startTime = 1 + random % 12;
+
+      int finishTime = 1 + random % 24;
+      while(finishTime <= startTime) {
+        finishTime++;
+      }
+
+      jobList[i].input(i+1, startTime, finishTime);
+      jobList[i].show();
+    }
+  }
+
+  void showTitle() {
+    cout << "\t" << setw(10) << left << "Ma CV"
+      << setw(15) << left << "Start time"
+      << setw(10) << left << "Finish time" << endl;
+  }
+
+  int sumExecTime(int k) {
+    int execTime = jobList[k].finishTime - jobList[k].startTime;
+
+    if(k == n-1)
+      return execTime;
+    else 
+      return execTime + sumExecTime(k+1);
+  }
+
+  void showMaCV() {
+    for(int i = 1; i <= k; i++) {
+        cout << "\t" << jobList[x[i]-1].maCV;
+    }
+      cout << endl;
+
+      countWays++;
+  }
+
+  void getFiveJobs(int p) {
+    for(int i = x[p-1]+1; i <= n-k+p; i++) {
+      x[p] = i;
+
+      if(p == k)
+        showMaCV();
+      else
+        getFiveJobs(p+1);
+    }	
+  }
   ```
 
   **Kết quả chạy:**
   
-  
+  |||
+  |--|--|
+  | ![image](https://user-images.githubusercontent.com/65481655/201362504-57830a4f-ba5a-45e6-a2bf-e57fd312e56a.png) | ![image](https://user-images.githubusercontent.com/65481655/201362547-8ea07645-31d2-439f-85f8-06cad2e045ee.png) |
 
 </details>
