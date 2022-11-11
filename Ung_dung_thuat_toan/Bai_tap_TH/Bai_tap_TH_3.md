@@ -322,7 +322,7 @@
       }
     }
   
-    if(m > 0 & count == n) {
+    if(m > 0 && count == n) {
       cout << "Chon het " << count << " xe cung khong van chuyen du hang\n";
       return;
 	  }
