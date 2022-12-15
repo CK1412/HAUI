@@ -219,3 +219,67 @@
   ![image](https://user-images.githubusercontent.com/65481655/207903560-5bc4d46e-f6e0-46da-86ff-76f19b6fdcf5.png)
 
 </details>
+
+**Bài 4:** Tìm giá trị lớn nhất/ nhỏ nhất của mảng 
+
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+  
+  **Code:**
+
+  ```c++
+  #include<iostream>
+  using namespace std;
+
+  void show(int *x, int n) {
+    for(int i = 0; i < n; i++) {
+      cout << x[i] << "  ";
+    }
+    cout << endl;
+  }
+
+  int min_max(int *a, int left, int right, int &min, int &max) {
+    int min1, min2, max1, max2;
+
+    if(left == right) {
+      min = a[left];
+      max = a[left];
+    }
+    else {
+      int mid = (left + right) / 2;
+      min1 = a[left]; max1 = a[mid];
+      min2 = a[mid+1]; max2 = a[right];
+
+      min_max(a, left, mid, min1, max1);
+      min_max(a, mid+1, right, min2, max2);
+
+      min = min1 < min2 ? min1 : min2;
+      max = max1 < max2 ? max2 : max1;
+    }
+  }
+
+  int main() {
+    int a[] = {3, 6, 8, 2, 82, 8, 9, 75, 1, 35, 6};
+    int n = sizeof(a) / sizeof(int);
+
+    cout << "Day so: "; 
+    show(a, n); 
+
+    int min = a[0];
+    int max = a[n-1];
+
+    min_max(a, 0, n-1, min, max);
+
+    cout << "So lon nhat: " << max << endl;
+    cout << "So nho nhat: " << min << endl; 
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+                                          
+  ![image](https://user-images.githubusercontent.com/65481655/207905741-b8f7b6b0-6382-4aee-9b6d-fd9fc129378e.png)                                       
+
+</details>
+  
