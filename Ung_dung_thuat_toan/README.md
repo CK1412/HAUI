@@ -15,6 +15,8 @@
 
 #### [GIẢI THUẬT CHIA ĐỂ TRỊ](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/On_tap/thuat_toan_chia_de_tri.md)
 
+#### [GIẢI THUẬT QUY HOẠCH ĐỘNG](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/On_tap/thuat_toan_quy_hoach_dong.md)
+
 ## [ĐỀ KIỂM TRA](https://github.com/CK1412/HAUI/tree/main/Ung_dung_thuat_toan/De_kiem_tra)
 
 #### [TX1](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/De_kiem_tra/TX1.md)
