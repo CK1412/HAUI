@@ -125,3 +125,91 @@
   ![image](https://user-images.githubusercontent.com/65481655/207909532-4df135d2-7481-44ce-a46b-1a8762b53305.png)
 
 </details>
+  
+**Bài 3:** Bài toán cái túi.
+
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+  
+  **Mô tả**
+  
+  - Trong siêu thị có n gói hàng {1, 2, …, n}, gói hàng thứ i có trọng lượng là w[i] và giá trị v[i].
+  - Ban đêm một tên trộm đột nhập vào siêu thị, cậu ấy mang theo một cái túi có thể mang được trọng lượng tối đa là m.
+  - Hỏi cậu ấy sẽ lấy đi những gói hàng nào để đạt được tổng giá trị lớn nhất.
+  
+  **Code:**
+
+  ```c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  int weight[] = {5, 10, 6, 3, 7, 8};
+  int value[] = {15,61, 20, 10, 50, 23};
+
+  int a[100][100];
+
+  void hienThiMang(int *a, int n) {
+    for(int i = 0; i < n; i++) {
+      cout << a[i] << "  ";
+    }
+    cout << endl;
+  }
+
+  // timMax(n, m) la gia tri max nhan duoc cua n goi hang voi gioi han trong luong m 
+  int timMax(int n, int max) {	
+    for(int i = 1; i <= n; i++) {
+      for(int w = 1; w <= max; w++) {
+        if(weight[i-1] <= w) {
+          int x = value[i-1] + a[i-1][w - weight[i-1]];
+          int y = a[i-1][w];
+          a[i][w] = x > y ? x : y;
+        }
+        else {
+          a[i][w] = a[i-1][w];
+        }
+      }
+    }
+
+
+    return a[n][max];
+  }
+
+  void hienThiGoiHangDaLay(int n, int max) {
+    cout << "Cac goi hang da lay: \n";
+    int i = n, j = max;
+    while(i > 0) {
+      if(a[i][j] != a[i-1][j]) {
+        cout << " Goi hang thu " << i
+          << ", w = " << weight[i-1] 
+          << ", v = " << value[i-1] << endl;
+        j -= weight[i-1];
+      }	
+      i--;
+    }
+  }
+
+  int main() {
+    int n = sizeof(weight) / sizeof(int),
+      max = 15;
+
+    cout << "So goi hang: " << n << endl;
+    cout << "Trong luong toi da cua tui: " << max << endl;
+    cout << "Thong so cac goi hang lan luot:\n";
+    cout << " Weight:\t"; hienThiMang(weight, n);
+    cout << " Value: \t"; hienThiMang(value, n);
+
+    cout << "\nTong gia tri max lay duoc: " << timMax(n, max) << endl;
+
+    hienThiGoiHangDaLay(n, max);
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/207910809-3265bb4b-ac5c-4f95-8054-ae1cdb5d734a.png)
+
+</details>
+
