@@ -283,3 +283,52 @@
 
 </details>
   
+**Bài 5:** Tính tổng dãy số
+
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+  
+  **Code:**
+
+  ```c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  void show(int *a, int n) {
+    for(int i = 0; i < n; i++) {
+      cout << a[i] << "  ";
+    }
+    cout << endl;
+  }
+
+  int tong(int *a, int l, int r) {
+    if(l == r) {
+      return a[l];
+    }
+    else {
+      int mid = (l + r) / 2;
+
+      return tong(a, l, mid) + tong(a, mid+1, r);
+    }
+  }
+
+  int main() {
+    int a[] = {1, 4, 6, 3, 2, 8, 9, 5};
+    int n = sizeof(a) / sizeof(int);
+
+    cout << "Day so: ";
+    show(a, n);
+
+    cout << "Tong day so: " << tong(a, 0, n-1) << endl;
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+                                                      
+  ![image](https://user-images.githubusercontent.com/65481655/207907152-b58ef0a2-99a9-458f-82c8-03d9dc91a1b3.png)                                                    
+
+</details>
+  
