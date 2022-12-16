@@ -154,3 +154,152 @@
 
 </details>
   
+ **Bài 2:** Cho một danh sách d gồm n xâu ký tự, mỗi xâu ký tự là một câu tiếng anh có chiều dài không quá 100 ký tự, các xâu ký tự đôi một khác nhau. Cài đặt chương trình thực hiện:
+- Khởi tạo số n và danh sách d (5 ≤ n ≤ 10).
+- Sử dụng chiến lược chia để trị thiết kế thuật toán cho biết xâu có chiều dài nhỏ nhất trong danh sách d, hiển thị xâu đó.
+- Sử dụng chiến lược chia để trị để tính tổng chiều dài của tất cả các xâu trong danh sách d.
+- Sắp xếp danh sách d bằng thuật toán sắp xếp trộn được thiết kế theo chiến lược chia để trị. Hiển thị danh sách sau khi sắp xếp.
+- Nhập một xâu ký tự bất kì st, bằng chiến lược chia để trị hãy thiết kế thuật toán để cho biết xâu st có xuất hiện trong danh sách d hay không, nếu có thì cho biết vị trí của nó.  
+  
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+  
+  **Code:**
+
+  ```c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  int n;
+  string *ds;
+
+  void khoiTaoDS() {
+    n = 6;
+    ds = new string[n] {
+    "I have a good day",
+    "I will say no",
+    "Hello bro",
+    "I can fly",
+    "I have a crush on you",
+    "A cat is smaller than a dog",
+    };
+  }
+
+  void hienThiDS(string *ds, int n) {
+    for(int i = 0; i < n; i++) {
+      cout << " " << ds[i] << endl; 
+    }
+  }
+
+  void timXauNganNhat(int l, int r, int &viTri) {
+    if(l == r) {
+      viTri = l;
+    }
+    else {
+      int mid = (l + r) / 2;
+      int v1 = l, v2 = mid+1;
+      timXauNganNhat(l, mid, v1);
+      timXauNganNhat(mid+1, r, v2);
+
+      if(ds[v1].size() > ds[v2].size()) {
+        viTri = v2;
+      }
+      else {
+        viTri = v1;
+      }
+    }
+  }
+
+  int tongChieuDaiXau(int l, int r) {
+    if(l == r) {
+      return ds[l].size();
+    }
+    else {
+      int mid = (l + r) / 2;
+      return tongChieuDaiXau(l, mid) + tongChieuDaiXau(mid+1, r);
+    }
+  }
+
+  void tron(int l, int mid, int r) {
+    int n1 = mid - l + 1,
+      n2 = r - mid;
+
+    string *a1 = new string[n1],
+      *a2 = new string[n2];
+
+    for(int i = 0; i < n1; i++) 
+      a1[i] = ds[l+i];
+    for(int i = 0; i < n2; i++) 
+      a2[i] = ds[mid+i+1];
+
+    int i = 0, j = 0, k = l;
+    while(i < n1 && j < n2)
+      ds[k++] = a1[i].compare(a2[j]) <= 0 ? a1[i++] : a2[j++];
+    while(i < n1)
+      ds[k++] = a1[i++];
+    while(j < n2)
+      ds[k++] = a2[j++];	
+  }
+
+  void sapXepTronTang(int l, int r) {
+    if(l < r) {
+      int mid = (l + r) / 2;
+      sapXepTronTang(l, mid);
+      sapXepTronTang(mid+1, r);
+      tron(l, mid, r);
+    }
+  }
+
+  int timXau(int l, int r, string st) {
+    if(l > r)
+      return -1;
+
+    int mid = (l + r) / 2;
+
+    int x = st.compare(ds[mid]);
+
+    if(x == 0) 
+      return mid;
+    else if(x < 0) 
+      return timXau(l, mid-1, st);
+    else 
+      return timXau(mid+1, r, st);
+  }
+
+  int main() {
+    khoiTaoDS();
+
+    cout << "Danh sach:\n";
+    hienThiDS(ds, n);
+
+    // vi tri xau ngan nhat
+    int viTri = 0;
+    timXauNganNhat(0, n-1, viTri);
+    cout << "\nXau ngan nhat la: " << ds[viTri] << endl;
+
+    cout << "Tong chieu dai cac xau trong ds: " << tongChieuDaiXau(0, n-1) << endl;
+
+    sapXepTronTang(0, n-1);
+    cout << "\nDanh sach sau khi sap xep tron tang dan:\n";
+    hienThiDS(ds, n);
+
+    string st = "Hello bro";
+    cout << "\nCho xau: " << st << endl;
+    int v = timXau(0, n-1, st);
+    if(v == -1) {
+      cout << "Khong tim thay xau trong ds" << endl;
+    }
+    else {
+      cout << "Tim thay xau o vi tri thu " << v+1 << endl;
+    }
+
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+
+  <image width="500px" src="https://user-images.githubusercontent.com/65481655/208052470-83f1b518-e395-4cd6-9ead-4fcc26b09190.png">
+
+</details>
