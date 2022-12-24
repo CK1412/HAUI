@@ -69,7 +69,7 @@
 
   **Kết quả chạy:**
   
-  
+  ![image](https://user-images.githubusercontent.com/65481655/209432864-982de0ae-fb16-4ecc-9c30-7b7ef5c0cf27.png)
 
 </details>
   
