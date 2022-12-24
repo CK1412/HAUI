@@ -19,6 +19,8 @@
 
 #### [ÔN TẬP KTTX2](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/On_tap/on_tap_kttx2.md)
 
+#### [GIẢI THUẬT XỬ LÝ XÂU KÍ TỰ](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/On_tap/thuat_toan_xu_ly_xau_ki_tu.md)
+
 ## [ĐỀ KIỂM TRA](https://github.com/CK1412/HAUI/tree/main/Ung_dung_thuat_toan/De_kiem_tra)
 
 #### [TX1](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/De_kiem_tra/TX1.md)
