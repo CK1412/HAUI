@@ -28,3 +28,7 @@
 #### [TX1](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/De_kiem_tra/TX1.md)
 
 #### [TX2](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/De_kiem_tra/TX2.md)
+
+## [ĐỀ THI KTHP](https://github.com/CK1412/HAUI/tree/main/Ung_dung_thuat_toan/De_thi_kthp/)
+
+#### [ĐỀ 14590](https://github.com/CK1412/HAUI/blob/main/Ung_dung_thuat_toan/De_thi_kthp/de_14590.md)
