@@ -274,7 +274,7 @@
 
 </details>
   
-**Bài 1:** Cho danh sách d gồm n sản phẩm mỗi sản phẩm gồm mã sản phẩm, tên sản phẩm, khối lượng (là số nguyên dương), giá trị (là số nguyên dương).
+**Bài 3:** Cho danh sách d gồm n sản phẩm mỗi sản phẩm gồm mã sản phẩm, tên sản phẩm, khối lượng (là số nguyên dương), giá trị (là số nguyên dương).
 Cài đặt chương trình gồm:
 
   1. Khởi tạo danh sách d gồm 7 đến 10 sản phẩm sao cho tên sản phẩm theo thứ tự từ điển.
