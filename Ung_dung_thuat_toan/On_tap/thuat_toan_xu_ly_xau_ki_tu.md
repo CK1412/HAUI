@@ -162,3 +162,68 @@
   ![image](https://user-images.githubusercontent.com/65481655/209432965-a6402acb-c6f8-474c-b748-22b49cacebee.png)
   
 </details>
+
+**Bài 3:** Cho biết hai xâu ký tự A và B, hãy tìm xâu ký tự C có độ dài lớn nhất và là con của cả A và B
+
+<details>
+  <summary><i>Xem chi tiết</i></summary>
+  <br>
+  
+  **Phân tích**
+  
+  - sử dụng thuật toán quy hoạch động
+  
+  **Code:**
+
+  ```c++
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  string xau_con_chung_dai_nhat(string strA, string strB) {
+    int a = strA.size(),
+      b = strB.size();
+    int dp[a+1][b+1];
+
+    int start = 0, 
+      length = 0;
+
+    for (int i = 0; i <= a; i++) {
+          for (int j = 0; j <= b; j++) {
+              dp[i][j] = 0;
+          }
+      }
+
+    for(int i = 1; i <= a; i++) {
+      for(int j = 1; j <= b; j++) {
+        if(strA[i-1] == strB[j-1]) {
+          dp[i][j] = dp[i-1][j-1] + 1;
+
+          if(dp[i][j] > length) {
+            length = dp[i][j];
+            start = i - length;
+          }
+        }
+      }
+    }
+
+    return strA.substr(start, length);
+  }
+
+  int main() {
+    string strA = "mot hai 3 bon nam sau 7 tam";
+    string strB = "ba bon nam 6 bay";
+    cout << "Xau A: " << strA << endl;
+    cout << "Xau B: " << strB << endl;
+
+    string subStr = xau_con_chung_dai_nhat(strA, strB);
+    cout << "\nXau con chung dai nhat la: " << subStr << endl; 
+    return 0;
+  }
+  ```
+
+  **Kết quả chạy:**
+  
+  ![image](https://user-images.githubusercontent.com/65481655/209463722-e34235e9-db73-457d-acc7-cbcb33b9f35e.png)
+
+</details>
+ 
